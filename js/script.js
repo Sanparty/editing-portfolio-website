@@ -178,9 +178,14 @@ featureslist.forEach((video) => {
 
 // home page image block attempt .mp4
 
-let homeimages = videoObjectArray.filter(video => video.imagetype === "mp4");
+let homeimagesall = videoObjectArray.filter(video => video.imagetype === "mp4");
 
-console.log("These are all the video objects with mp4s:", homeimages);
+var homeimages = homeimagesall.filter((video,idx) => idx < 6)
+
+
+
+console.log("These are all the video objects with mp4s:", homeimagesall);
+console.log("These are first 6 video objects with mp4s", homeimages);
 
 const imageList = homeimages.map((video) => {
   let videoArticle = document.createElement("div");
