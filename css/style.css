@@ -331,19 +331,18 @@ hr.new1 {
 #myBtn {
   display: block; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 25px; /* Place the button at the bottom of the page */
+  bottom: 20px; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
-  border-radius: 5px;
-  outline: solid gray; /* Remove outline */
+  outline: solid grey thin; /* Remove outline */
   background-color: transparent; /* Set a background color */
-  color: white; /* Text color */
+  color: grey; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 5px; /* Some padding */
-  font-size: 20px; /* Increase font size */
+  padding: 6px; /* Some padding */
+  font-size: 22px; /* Increase font size */
   opacity: 0;
-  transition: 0.2s ease;
+  transition: 0.5s ease;
 }
 
 #myBtn:hover {
@@ -355,5 +354,10 @@ hr.new1 {
 @media only screen and (max-width: 600px) {
   .menubar-list {
     flex-direction: column;
+  }
+
+  #myBtn {
+    bottom: 150px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
   }
 }
