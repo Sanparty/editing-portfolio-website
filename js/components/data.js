@@ -354,7 +354,7 @@ const gb2 = new Video(
                     "none",
                     "promotions.html");
 
-const videoObjectArray = [tmn1, encore1, encore2, mlse1, mlse4, mlse5, gb1, gb2, terminator, mpix1, movieent1, movieent2, xenophile1, tsn1, mpix2];
+const videoObjectArray = [tmn1, encore1, encore2, mlse1, mlse4, mlse5, gb1, movieent1, gb2, terminator, mpix1, movieent2, xenophile1, tsn1, mpix2];
 
 // Export the array to be used in other files
 export default videoObjectArray;
