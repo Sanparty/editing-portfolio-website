@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.6rem;
+  background-color: lightblue;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+}
+
+a {
+  color: black;
+}
+
+figure {
+  margin: 0;
+}
+
+.siteheader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: lightblue;
+}
+
+.site-title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 5rem;
+  font-weight: 200;
+}
+
+.siteheader:after {
+  display: block;
+  margin: 1rem 0;
+  content: "⚍⚌⚍";
+}
+
+.maincontent {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 60rem;
+}
+
+.page-header {
+  margin-bottom: 3rem;
+}
+
+.page-header__heading {
+  margin-top: -1rem;
+  text-align: center;
+}
+
+.page-header:after {
+  margin: 4rem auto;
+  display: block;
+  content: "";
+  border-bottom: 3px solid black;
+  width: 4rem;
+}
+
+.video {
+  width: 500px;
+  margin-bottom: 4rem;
+  flex-shrink: 1;
+  /* padding-bottom: rem; */
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 0 3rem; */
+}
+
+.video:after {
+  margin: 0 auto;
+  padding-top: 4rem;
+  display: block;
+  grid-column: span 2;
+  content: "";
+  border-bottom: 3px solid black;
+  width: 4rem;
+}
+.videosection {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.video__name {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  font-size: 18px;
+  line-height: 1;
+  text-transform: uppercase;
+  border-bottom: 3px solid black;
+}
+
+.image__genre {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  font-size: 18px;
+  line-height: 1;
+  text-transform: uppercase;
+  border-bottom: 3px solid black;
+}
+
+.video__details {
+  margin: 0;
+  padding: 1rem 0 0 0;
+  list-style-type: none;
+}
+
+.video__details li {
+  padding: 0.2rem 0;
+  font-size: 15px;
+}
+
+.video-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.video-container::after {
+  padding-top: 56.25%;
+  display: block;
+  content: "";
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video__spot {
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+/* Subgrid. See https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Subgrid */
+@supports (grid-template-columns: subgrid) {
+  .video__features {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0 1rem;
+  }
+
+  .video__features li {
+    display: grid;
+    grid-column: span 2;
+    grid-template-columns: subgrid;
+  }
+}
+
+.image {
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+}
+
+.front_image {
+  width: 100%;
+  border-radius: 10px;
+  /* outline: black solid; */
+  transition: all 1s ease;
+  display: block;
+  height: auto;
+}
+
+/* .front_image:hover {
+  width: 150px;
+  transition: all 0.2s ease;
+  filter: saturate(0);
+} */
+
+.front_image_container {
+  position: relative;
+  max-width: 300px;
+  width: 50%;
+  margin: 20px;
+}
+
+.front_image_container:hover .image_text {
+  opacity: 1;
+  top: 50%;
+  transition: all 0.5s ease;
+}
+
+.front_image_container:hover .front_image {
+  opacity: 0.5;
+  background-color: lightblue;
+  filter: blur(8px);
+  transition: all 1s ease;
+}
+
+.image-block {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* outline: black solid; */
+}
+
+hr.new1 {
+  border: 3px solid black;
+}
+
+.image_text {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  /* border-bottom: 3px solid black; */
+  position: absolute;
+  top: 75%;
+  /* background: rgb(100, 100, 100);
+  background: rgba(255, 255, 255, 0.5); Black see-through */
+  color: black;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: black;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.sitefooter {
+  margin-top: 8rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  color: white;
+}
+
+.container,
+.marketing,
+.features {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.nodisplay {
+  display: none;
+}
