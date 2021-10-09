@@ -351,7 +351,11 @@ hr.new1 {
   /* Add a dark-grey background on hover */
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
+  .menubar {
+    display: none;
+  }
+
   .menubar-list {
     flex-direction: column;
   }

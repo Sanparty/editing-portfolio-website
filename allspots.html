@@ -12,6 +12,12 @@
       type="text/css"
       media="all"
     />
+    <link
+      rel="stylesheet"
+      href="./css/style-overlay.css"
+      type="text/css"
+      media="all"
+    />
     <!-- <link
     rel="stylesheet"
     href="./css/style-dspedit.production.css"
@@ -25,22 +31,46 @@
     href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Work+Sans:wght@100..900&display=swap"
     rel="stylesheet"
   />
-      
+ 
     <script type="module" src="./js/components/video.js"></script>
     <script type="module" src="./js/components/data.js"></script>
     <script type="module" src="./js/script.js"></script>
+
     
   </head>
   <body>
+               <!-- The overlay -->
+               <div id="myNav" class="overlay">
+
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                  <a href="index.html">HOME</a>
+                  <a href="promotions.html">PROMOTIONS</a>
+                  <a href="features.html">FEATURES</a>
+                  <a href="marketing.html">MARKETING</a>
+                </div>
+              
+              </div>
+              
+              <!-- Use any element to open/show the overlay navigation menu -->
+              
+              
     <div class="wrapper">
     <div class="header">
+      
       <div class="menubar">
       <div class="menubar-list">
           <div class="menubar-list menuitem"><a href="index.html">HOME</a></div>
           <div class="menubar-list menuitem"><a href="promotions.html">PROMOTIONS</a></div>
           <div class="menubar-list menuitem"><a href="features.html">FEATURES</a></div>
           <div class="menubar-list menuitem"><a href="marketing.html">MARKETING</a></div>  
-      </div>   
+      </div> 
+      </div>
+      <div class="menubar_overlay_button">
+      <span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776;</span></div>
       </div>
       <!-- <div class="social-media">
           <a href="https://github.com/Sanparty" target="_blank" class="social-media_logo"><img src="images/1298743_github_git_logo_social_icon.svg" alt="Github" ></a>
@@ -48,7 +78,8 @@
           <a href="https://www.linkedin.com/in/dsanpedro/" target="_blank" class="social-media_logo"><img src="images/317750_linkedin_icon.svg" alt="Linkedin" ></a>
           <a href="https://vimeo.com/dansp" target="_blank" class="social-media_logo"><img src="images/381370_logo_vimeo_icon.svg" alt="Vimeo" ></a>
       </div> -->
-  </div>
+  </div> 
+
     <header class="siteheader">
       <div class="site-title">DSP Portfolio</div>
       <div class="site-description">Check out videos I have worked on:</div>
@@ -83,9 +114,13 @@
         <a href="https://vimeo.com/dansp" target="_blank" class="social-media_logo"><img src="images/381370_logo_vimeo_icon.svg" alt="Vimeo" ></a>
       </div>
     </footer>
+
+
     <button onclick="topFunction()" id="myBtn" title="Go to top">
       <i class="fa fa-angle-double-up"></i>
     </button>
     <script src="js/script2.js"></script>
+   
+   
   </body>
 </html>
