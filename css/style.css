@@ -80,6 +80,10 @@ figure {
   text-align: center;
   align-items: center;
   background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
 }
 
 .siteheader {
@@ -88,6 +92,7 @@ figure {
   align-items: center;
   padding: 2rem;
   background-color: lightblue;
+  margin-top: 20px;
 }
 
 .site-title {
