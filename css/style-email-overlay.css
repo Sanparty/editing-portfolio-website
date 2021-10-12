@@ -70,3 +70,12 @@
   padding-right: 2px;
   margin-top: 5px;
 }
+@media screen and (max-height: 900px) {
+  .email_overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    top: 5%;
+  }
+}
