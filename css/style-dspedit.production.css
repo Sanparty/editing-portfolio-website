@@ -109,6 +109,10 @@ figure {
   -ms-flex-align: center;
   align-items: center;
   background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
 }
 
 .siteheader {
@@ -124,6 +128,7 @@ figure {
   align-items: center;
   padding: 2rem;
   background-color: lightblue;
+  margin-top: 20px;
 }
 
 .site-title {
@@ -396,11 +401,45 @@ hr.new1 {
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+#myBtn {
+  display: block; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: solid grey thin; /* Remove outline */
+  background-color: transparent; /* Set a background color */
+  color: grey; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 6px; /* Some padding */
+  font-size: 22px; /* Increase font size */
+  opacity: 0;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#myBtn:hover {
+  background-color: black;
+  color: white; /* Text color */
+  /* Add a dark-grey background on hover */
+}
+
+@media only screen and (max-width: 700px) {
+  .menubar {
+    display: none;
+  }
+
   .menubar-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  #myBtn {
+    bottom: 150px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
   }
 }
