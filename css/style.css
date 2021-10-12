@@ -25,6 +25,13 @@ h6 {
   font-family: "Oswald", sans-serif;
 }
 
+h2 {
+  font-size: 30px;
+  border-bottom: black solid 3px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -145,6 +152,9 @@ figure {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr;
   gap: 0 3rem; */
+}
+#email_link_bar {
+  display: none;
 }
 
 .video: after {
@@ -356,7 +366,11 @@ hr.new1 {
   /* Add a dark-grey background on hover */
 }
 
-@media only screen and (max-width: 700px) {
+.email_icon {
+  background-color: white;
+}
+
+@media only screen and (max-width: 750px) {
   .menubar {
     display: none;
   }

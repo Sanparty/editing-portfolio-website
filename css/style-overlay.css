@@ -54,13 +54,18 @@
   display: none;
 }
 
-@media screen and (max-width: 700px) {
+#email_link_bar {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
   .menubar_overlay_button {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin: 0 10px;
     width: 100%;
     border-bottom: 3px solid black;
+    align-items: center;
   }
 }
 

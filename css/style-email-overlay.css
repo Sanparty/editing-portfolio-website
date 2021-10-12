@@ -1,0 +1,73 @@
+.email_overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 50%;
+  width: 50%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 25%;
+  top: 25%;
+  opacity: 0;
+  background-color: rgb(255, 255, 255); /* Black fallback color */
+  background-color: rgba(255, 255, 255, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+.email_overlay-content {
+  margin: 0 auto;
+  text-align: left;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  width: 350px;
+}
+
+.email_overlay .closebtn_email {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  font-size: 30px;
+
+  color: black;
+}
+
+.standard-label {
+  text-transform: uppercase;
+}
+
+#contact-name,
+#contact-email,
+#contact-tel,
+#contact-message {
+  width: 350px;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+#send-message {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.email_link {
+  padding-top: 7px;
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 750px) {
+  .email_overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 50%;
+    width: 100%;
+    left: 0%;
+    top: 25%;
+  }
+}
+#email_link_bar {
+  display: inherit;
+  padding-right: 2px;
+  margin-top: 5px;
+}

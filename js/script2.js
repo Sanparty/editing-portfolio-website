@@ -8,6 +8,19 @@ function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
 
+
+/* Open email overlay */
+function openEmail() {
+  document.getElementById("myEmail").style.opacity = "1";
+}
+
+/* Close email overlay */
+function closeEmail() {
+  document.getElementById("myEmail").style.opacity = "0";
+}
+
+
+
 window.onscroll = function() {
     scrollFunction();
   };
