@@ -354,7 +354,68 @@ const gb2 = new Video(
                     "none",
                     "promotions.html");
 
-const videoObjectArray = [tmn1, encore1, encore2, mlse1, mlse4, mlse5, gb1, movieent1, gb2, terminator, mpix1, movieent2, xenophile1, tsn1, mpix2];
+                    const encore3 = new Video(
+                      "video16",
+                      "April 2018 Image Spot",
+                      "The Movie Network Encore",
+                      "Bell Media",
+                      "Promotions",
+                      "Promo Producer",
+                      true,
+                      true,
+                      true,
+                      false,
+                      false,
+                      ":50",
+                      "Vimeo",
+                      `<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/375510753?h=391d472b83&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="TMN Encore Image_April 2018"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,
+                      "January 1, 2004",
+                      "none",
+                      "none",
+                      "promotions.html"
+                   );
+                   const encore4 = new Video(
+                    "video17",
+                    "November 2018 Image Spot",
+                    "The Movie Network Encore",
+                    "Bell Media",
+                    "Promotions",
+                    "Promo Producer",
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    ":53",
+                    "Vimeo",
+                    `<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/375510740?h=0f413a0c92&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="TMN Encore Image_November 2018"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,
+                    "January 1, 2004",
+                    "none",
+                    "none",
+                    "promotions.html"
+                 );
+                 const hbo1 = new Video(
+                  "video18",
+                  "Love Shines on HBO Canada",
+                  "HBO Canada",
+                  "Astral Media",
+                  "Features",
+                  "Offline and Online Editor",
+                  true,
+                  true,
+                  true,
+                  false,
+                  false,
+                  "2:00",
+                  "Vimeo",
+                  `<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/96462560?h=547c9a5775&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Love Shines on HBO Canada - Feature"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,
+                  "September 1, 2013",
+                  "none",
+                  "none",
+                  "features.html"
+                  );
+
+const videoObjectArray = [tmn1, hbo1, encore1, encore2, encore3, encore4, mlse1, mlse4, mlse5, gb1, movieent1, gb2, terminator, mpix1, movieent2, xenophile1, tsn1, mpix2];
 
 // Export the array to be used in other files
 export default videoObjectArray;
