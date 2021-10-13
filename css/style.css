@@ -1,3 +1,18 @@
+:root {
+  --primary-color: black;
+  --secondary-color: gray;
+  --text-color: black;
+  --secondary-text-color: white;
+  --primary-background-color: lightblue;
+  --secondary-background-color: black;
+  --third-background-color: white;
+  --button-text-color: white;
+  --responsive-margin-top: 0;
+  --responsive-margin-top-large: 10px;
+  --primary-font: "Work Sans", sans-serif;
+  --secondary-font: "Oswald", sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -11,9 +26,9 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  font-family: "Work Sans", sans-serif;
+  font-family: var(--primary-font);
   font-size: 1.6rem;
-  background-color: lightblue;
+  background-color: var(--primary-background-color);
 }
 
 h1,
@@ -22,18 +37,18 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--secondary-font);
 }
 
 h2 {
   font-size: 30px;
-  border-bottom: black solid 3px;
+  border-bottom: var(--primary-color);
   padding-bottom: 10px;
   text-transform: uppercase;
 }
 
 a {
-  color: black;
+  color: var(--text-color);
   text-decoration: none;
 }
 
@@ -44,7 +59,7 @@ figure {
 .menubar {
   margin: 0;
   width: 50%;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid var(--primary-color);
 }
 
 .menubar-list {
@@ -54,9 +69,9 @@ figure {
 }
 
 .menuitem {
-  color: white;
+  color: var(--secondary-text-color);
   flex-shrink: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 18px;
   margin: 0;
@@ -68,7 +83,7 @@ figure {
 .menuitem a,
 .menuitem a:visited,
 .menuitem a:link {
-  color: white;
+  color: var(--secondary-text-color);
 }
 
 .wrapper {
@@ -86,7 +101,7 @@ figure {
   justify-content: center;
   text-align: center;
   align-items: center;
-  background-color: black;
+  background-color: var(--secondary-background-color);
   position: fixed;
   top: 0;
   width: 100%;
@@ -98,21 +113,21 @@ figure {
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  background-color: lightblue;
+  background-color: var(--primary-background-color);
   margin-top: 20px;
 }
 
 .site-title {
   margin-top: 0;
   margin-bottom: 1rem;
-  font-family: "Oswald", sans-serif;
+  font-family: var(--secondary-font);
   font-size: 5rem;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
 }
 
-.siteheader: after {
+.siteheader:after {
   display: block;
   margin: 1rem 0;
   content: "⚍⚌⚍";
@@ -133,11 +148,11 @@ figure {
   text-align: center;
 }
 
-.page-header: after {
+.page-header:after {
   margin: 4rem auto;
   display: block;
   content: "";
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid var(--primary-color);
   width: 4rem;
 }
 
@@ -157,13 +172,13 @@ figure {
   display: none;
 }
 
-.video: after {
+.video:after {
   margin: 0 auto;
   padding-top: 4rem;
   display: block;
   grid-column: span 2;
   content: "";
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid var(--primary-color);
   width: 4rem;
 }
 
@@ -174,7 +189,7 @@ figure {
   font-size: 18px;
   line-height: 1;
   text-transform: uppercase;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid var(--primary-color);
 }
 
 .image__genre {
@@ -184,7 +199,7 @@ figure {
   font-size: 18px;
   line-height: 1;
   text-transform: uppercase;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid var(--primary-color);
 }
 
 .video__details {
@@ -232,7 +247,7 @@ figure {
 .front_image {
   width: 100%;
   border-radius: 5px;
-  outline: black solid;
+  outline: var(--primary-color) solid;
   transition: all 1s ease;
   display: block;
   height: auto;
@@ -259,7 +274,7 @@ figure {
 
 .front_image_container:hover .front_image {
   opacity: 0.2;
-  background-color: lightblue;
+  background-color: var(--primary-background-color);
   filter: blur(5px);
   transition: all 1s ease;
 }
@@ -276,12 +291,12 @@ figure {
 }
 
 hr.new1 {
-  border: 2px solid black;
+  border: 2px solid var(--primary-color);
   width: 100%;
 }
 
 .image_text {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--secondary-font);
   font-weight: 700;
   text-transform: uppercase;
   text-align: left;
@@ -292,7 +307,7 @@ hr.new1 {
 
   /* background: rgb(100, 100, 100);
   background: rgba(255, 255, 255, 0.5); Black see-through */
-  color: black;
+  color: var(--primary-color);
   width: 100%;
   transition: 0.5s ease;
   opacity: 0;
@@ -311,7 +326,7 @@ hr.new1 {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background: black;
+  background: var(--secondary-background-color);
   color: white;
 }
 
@@ -321,6 +336,7 @@ hr.new1 {
 } */
 
 .rights-text {
+  font-family: var(--primary-font);
   font-size: 15px;
   margin: 10px;
 }
@@ -350,9 +366,9 @@ hr.new1 {
   right: 30px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
-  outline: solid grey thin; /* Remove outline */
+  outline: solid var(--secondary-color) thin; /* Remove outline */
   background-color: transparent; /* Set a background color */
-  color: grey; /* Text color */
+  color: var(--secondary-color); /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 6px; /* Some padding */
   font-size: 22px; /* Increase font size */
@@ -361,13 +377,13 @@ hr.new1 {
 }
 
 #myBtn:hover {
-  background-color: black;
-  color: white; /* Text color */
+  background-color: var(--primary-background-color);
+  color: var(--secondary-text-color); /* Text color */
   /* Add a dark-grey background on hover */
 }
 
 .email_icon {
-  background-color: white;
+  background-color: var(--third-background-color);
 }
 
 @media only screen and (max-width: 750px) {
