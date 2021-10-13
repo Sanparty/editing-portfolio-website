@@ -11,12 +11,12 @@ function closeNav() {
 
 /* Open email overlay */
 function openEmail() {
-  document.getElementById("myEmail").style.opacity = "1";
+  document.getElementById("myEmail").style.display = "block";
 }
 
 /* Close email overlay */
 function closeEmail() {
-  document.getElementById("myEmail").style.opacity = "0";
+  document.getElementById("myEmail").style.display = "none";
 }
 
 

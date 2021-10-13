@@ -2,17 +2,19 @@
   /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 50%;
   width: 50%;
+  display: none;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 25%;
   top: 25%;
-  opacity: 0;
   background-color: rgb(255, 255, 255); /* Black fallback color */
   background-color: rgba(255, 255, 255, 0.9); /* Black w/opacity */
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
 .email_overlay-content {
+  position: relative;
+  top: 0%;
   margin: 0 auto;
   text-align: left;
   font-family: "Oswald", sans-serif;
@@ -27,7 +29,6 @@
   top: 2%;
   right: 2%;
   font-size: 30px;
-
   color: black;
 }
 
