@@ -130,11 +130,11 @@ figure {
   text-align: center;
 }
 
-.siteheader:after {
+/* .siteheader:after {
   display: block;
   margin: 1rem 0;
   content: "⚍⚌⚍";
-}
+} */
 
 .maincontent {
   margin: 0 auto;
