@@ -348,6 +348,18 @@ hr.new1 {
   margin: 10px;
 }
 
+.social-media_logo {
+  padding: 0;
+  transition: all 0.2s ease 0s;
+}
+
+.social-media_logo:hover,
+.social-media_logo:focus {
+  opacity: 0.8;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
 .videosection,
 .container,
 .marketing,
