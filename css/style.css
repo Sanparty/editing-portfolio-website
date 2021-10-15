@@ -415,3 +415,16 @@ hr.new1 {
     right: 30px; /* Place the button 30px from the right */
   }
 }
+
+@media only screen and (max-width: 550px) {
+  .videosection,
+  .container,
+  .marketing,
+  .features {
+    padding: 0 20px;
+  }
+  .site-title {
+    font-size: 4rem;
+    padding: 0 20px;
+  }
+}
