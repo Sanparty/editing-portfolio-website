@@ -415,7 +415,28 @@ const gb2 = new Video(
                   "features.html"
                   );
 
-const videoObjectArray = [tmn1, hbo1, encore1, encore2, encore3, encore4, mlse1, mlse4, mlse5, gb1, movieent1, gb2, terminator, mpix1, movieent2, xenophile1, tsn1, mpix2];
+                  const encore5 = new Video(
+                    "video19",
+                    "April 2017 Image Spot",
+                    "The Movie Network Encore",
+                    "Bell Media",
+                    "Promotions",
+                    "Promo Producer",
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    ":50",
+                    "Vimeo",
+                    `<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/375510801?h=dfb54e1b25&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="TMN Encore Image_April 2017"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,
+                    "January 1, 2004",
+                    "none",
+                    "none",
+                    "promotions.html"
+                 );
+
+const videoObjectArray = [tmn1, hbo1, encore5, encore1, encore2, encore3, encore4, mlse1, mlse4, mlse5, gb1, movieent1, gb2, terminator, mpix1, movieent2, xenophile1, tsn1, mpix2];
 
 // Export the array to be used in other files
 export default videoObjectArray;
