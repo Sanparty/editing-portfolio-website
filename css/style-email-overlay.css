@@ -1,6 +1,6 @@
 .email_overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */
-  height: 50%;
+  height: 55%;
   width: 50%;
   display: none;
   position: fixed; /* Stay in place */
@@ -8,7 +8,7 @@
   left: 25%;
   top: 25%;
   background-color: rgb(255, 255, 255);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
