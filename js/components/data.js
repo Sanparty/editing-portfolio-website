@@ -366,7 +366,7 @@ const gb2 = new Video(
                       true,
                       false,
                       false,
-                      ":50",
+                      ":51",
                       "Vimeo",
                       `<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/375510753?h=391d472b83&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="TMN Encore Image_April 2018"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,
                       "January 1, 2004",
@@ -427,7 +427,7 @@ const gb2 = new Video(
                     true,
                     false,
                     false,
-                    ":50",
+                    ":49",
                     "Vimeo",
                     `<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/375510801?h=dfb54e1b25&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="TMN Encore Image_April 2017"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,
                     "January 1, 2004",
@@ -435,8 +435,49 @@ const gb2 = new Video(
                     "none",
                     "promotions.html"
                  );
+                 const encore6 = new Video(
+                  "video20",
+                  "January 2019 Image Spot",
+                  "The Movie Network Encore",
+                  "Bell Media",
+                  "Promotions",
+                  "Promo Producer",
+                  true,
+                  true,
+                  true,
+                  false,
+                  false,
+                  ":56",
+                  "Vimeo",
+                  `<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/375510723?h=a20d22fd91&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="TMN Encore Image_January 2019"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,
+                  "January 1, 2019",
+                  "none",
+                  "none",
+                  "promotions.html"
+               );
+               const mescape1 = new Video(
+                "video21",
+                "Flashdance",
+                "MEscape",
+                "Astral Media",
+                "Promotions",
+                "Offline and Online Editor, Graphic Design",
+                true,
+                true,
+                true,
+                false,
+                false,
+                ":45",
+                "Vimeo",
+                `<div style="padding:67.5% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/96981875?h=c5c07aecd7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Flashdance - Promo"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,
+                "January 1, 2004",
+                "none",
+                "none",
+                "promotions.html");
 
-const videoObjectArray = [tmn1, hbo1, encore5, encore1, encore2, encore3, encore4, mlse1, mlse4, mlse5, gb1, movieent1, gb2, terminator, mpix1, movieent2, xenophile1, tsn1, mpix2];
+
+
+const videoObjectArray = [tmn1, hbo1, encore5, encore1, encore2, encore3, encore4, encore6, mlse1, mlse4, mlse5, gb1, movieent1, gb2, terminator, mpix1, mescape1, movieent2, xenophile1, tsn1, mpix2];
 
 // Export the array to be used in other files
 export default videoObjectArray;
