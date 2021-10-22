@@ -474,10 +474,29 @@ const gb2 = new Video(
                 "none",
                 "none",
                 "promotions.html");
+                const xenophile2 = new Video(
+                  "video22",
+                  "MI HIGH - Web Walkthrough",
+                  "Digital",
+                  "Xenophile Media",
+                  "Features",
+                  "Offline and Online Editor, Audio Mixing",
+                  true,
+                  true,
+                  true,
+                  false,
+                  false,
+                  "5:37",
+                  "Vimeo",
+                  `<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/637974231?h=fc98ea03e8&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="MI HIGH walk through.mov"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,
+                  "January 1, 2009",
+                  "none",
+                  "none",
+                  "features.html"
+          );
 
 
-
-const videoObjectArray = [tmn1, hbo1, encore5, encore1, encore2, encore3, encore4, encore6, mlse1, mlse4, mlse5, gb1, movieent1, gb2, terminator, mpix1, mescape1, movieent2, xenophile1, tsn1, mpix2];
+const videoObjectArray = [tmn1, hbo1, encore5, encore1, encore2, encore3, encore4, encore6, mlse1, mlse4, mlse5, gb1, movieent1, gb2, terminator, mpix1, mescape1, movieent2, xenophile1, xenophile2, tsn1, mpix2];
 
 // Export the array to be used in other files
 export default videoObjectArray;
