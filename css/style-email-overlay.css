@@ -1,12 +1,15 @@
 .email_overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 55%;
-  width: 50%;
+  width: 40%;
   display: none;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  left: 25%;
+  left: 30%;
   top: 25%;
+  /* background-image: url(../images/avid_edit_screen.png);
+  background-position: center;
+  background-repeat: no-repeat; */
   background-color: rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0.9);
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
@@ -14,14 +17,20 @@
 
 .email_overlay-content {
   position: relative;
-  top: 0%;
+  top: 2%;
   margin: 0 auto;
+  padding: 0 10px;
   text-align: left;
   font-family: var(--secondary-font);
   font-size: 20px;
   font-weight: var(--secondary-font-weight);
   color: var(--text-color);
-  width: 350px;
+  width: 90%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
 }
 
 .email_overlay .closebtn_email {
@@ -40,7 +49,8 @@
 #contact-email,
 #contact-tel,
 #contact-message {
-  width: 350px;
+  flex-shrink: 1;
+  width: 100%;
   margin: 10px 0;
   padding: 5px;
 }
@@ -50,6 +60,7 @@
   font-family: var(--secondary-font);
   font-size: 20px;
   font-weight: var(--secondary-font-weight);
+  margin-top: 10px;
 }
 
 .email_link {
@@ -60,10 +71,13 @@
 @media screen and (max-width: 750px) {
   .email_overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */
-    height: 50%;
-    width: 100%;
-    left: 0%;
+    height: 55%;
+    width: 90%;
+    left: 5%;
     top: 25%;
+  }
+  .email_overlay-content {
+    top: 0%;
   }
 }
 #email_link_bar {
