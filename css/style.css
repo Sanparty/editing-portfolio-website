@@ -427,4 +427,8 @@ hr.new1 {
     font-size: 4rem;
     padding: 0 20px;
   }
+  .front_image_container {
+    max-width: auto;
+    width: 100%;
+  }
 }
