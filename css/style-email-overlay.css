@@ -7,6 +7,9 @@
   z-index: 1; /* Sit on top */
   left: 30%;
   top: 25%;
+  border-radius: 20px;
+  outline-style: inset;
+  outline-width: 3px;
   /* background-image: url(../images/avid_edit_screen.png);
   background-position: center;
   background-repeat: no-repeat; */
@@ -85,12 +88,31 @@
   padding-right: 2px;
   margin-top: 5px;
 }
-@media screen and (max-height: 900px) {
+@media screen and (max-height: 850px) {
   .email_overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */
-    height: 100%;
-    width: 100%;
-    left: 0%;
-    top: 5%;
+    height: 72%;
+    width: 80%;
+    left: 10%;
+    top: 14%;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .email_overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 85%;
+    width: 80%;
+    left: 10%;
+    top: 10%;
+  }
+  .standard-label {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  #send-message {
+    font-size: 15px;
   }
 }
