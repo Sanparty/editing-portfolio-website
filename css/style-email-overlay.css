@@ -98,13 +98,13 @@
   }
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 700px) {
   .email_overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */
-    height: 85%;
-    width: 80%;
-    left: 10%;
-    top: 10%;
+    height: 86%;
+    width: 96%;
+    left: 2%;
+    top: 7%;
   }
   .standard-label {
     font-size: 15px;
@@ -114,5 +114,48 @@
   }
   #send-message {
     font-size: 15px;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  .email_overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 86%;
+    width: 96%;
+    left: 2%;
+    top: 10%;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #contact-name,
+  #contact-email,
+  #contact-tel,
+  #contact-message {
+    flex-shrink: 1;
+    width: 40%;
+    margin: 10px 10px;
+    padding: 5px;
+  }
+
+  #send-message {
+    max-height: 30px;
+    margin: 10px;
+  }
+
+  .email_overlay-content {
+    width: 100%;
+  }
+
+  .email_overlay .closebtn_email {
+    position: absolute;
+    top: 80%;
+    right: 2%;
+    font-size: 30px;
+    color: var(--text-color);
   }
 }
