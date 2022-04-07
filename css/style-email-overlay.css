@@ -31,6 +31,13 @@
   width: 90%;
 }
 
+#fieldset-contact {
+  margin-top: 1em;
+  border: solid 2px;
+}
+#fieldset-message {
+  border: solid 2px;
+}
 .contact-form {
   display: flex;
   flex-direction: column;
