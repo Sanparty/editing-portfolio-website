@@ -3,7 +3,7 @@ if (isset($_POST['contact-email'])) {
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "dansp2021@icloud.com";
-    $email_subject = "New Website Email";
+    $email_subject = "New Website Email from Editing Portfolio site";
 
     function problem($error)
     {
