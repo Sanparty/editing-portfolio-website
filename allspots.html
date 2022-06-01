@@ -29,7 +29,7 @@
 
   <script type="module" src="./js/components/video.js"></script>
   <script type="module" src="./js/components/data.js"></script>
-  <script type="module" src="./js/script.js"></script>
+  <script type="module" src="./js/allspots.js"></script>
 
 
 </head>
@@ -57,28 +57,28 @@
 
     <!-- Button to close the overlay navigation -->
     <a href="javascript:void(0)" class="closebtn_email" onclick="closeEmail()">&times;</a>
-  <!-- The email overlay -->
-  <div class="email_overlay-content">
-    <!-- <h2 id="contact-me">Contact Me</h2> -->
-    <form method="post" action="contact-form-process.php" class="contact-form">
-      <fieldset id="fieldset-contact">
-        <legend>Contact Information</legend>
-        <label class="standard-label" for="contact-name" value="name">Name:</label>
-        <input type="text" id="contact-name" name="contact-name" minlength="5" required>
-        <label class="standard-label" for="contact-email">E-mail:</label>
-        <input type="email" id="contact-email" name="contact-email" required>
-      </fieldset>
-      <fieldset id="fieldset-message">
-        <legend>Message</legend>
-        <!-- <label class="standard-label" for="contact-message">Message:</label> -->
+    <!-- The email overlay -->
+    <div class="email_overlay-content">
+      <!-- <h2 id="contact-me">Contact Me</h2> -->
+      <form method="post" action="contact-form-process.php" class="contact-form">
+        <fieldset id="fieldset-contact">
+          <legend>Contact Information</legend>
+          <label class="standard-label" for="contact-name" value="name">Name:</label>
+          <input type="text" id="contact-name" name="contact-name" minlength="5" required>
+          <label class="standard-label" for="contact-email">E-mail:</label>
+          <input type="email" id="contact-email" name="contact-email" required>
+        </fieldset>
+        <fieldset id="fieldset-message">
+          <legend>Message</legend>
+          <!-- <label class="standard-label" for="contact-message">Message:</label> -->
 
-        <textarea maxlength="240" id="contact-message" name="contact-message" required rows="5" cols="30"></textarea>
-      </fieldset>
-      <input type="submit" id="send-message" aria-label="Send Message" value="Send Message">
-    </form>
+          <textarea maxlength="240" id="contact-message" name="contact-message" required rows="5" cols="30"></textarea>
+        </fieldset>
+        <input type="submit" id="send-message" aria-label="Send Message" value="Send Message">
+      </form>
+    </div>
+
   </div>
-
-</div>
 
 
   <!-- Use any element to open/show the overlay navigation menu -->
@@ -129,11 +129,17 @@
         </p>
       </div>
     </main> -->
-    <div class="videosection"></div>
-    <div class="container nodisplay"></div>
-    <div class="marketing nodisplay"></div>
-    <div class="features nodisplay"></div>
-    <div class="image-block nodisplay"></div>
+    <div class="full-container">
+      <div class="buttons">
+        <button id="promotionsbtn" onclick="promotionsShow()">Promotions</button>
+        <button id="featuresbtn" onclick="featuresShow()">Features</button>
+        <button id="smarketingbtn" onclick="smarketingShow()">Social Media Marketing</button>
+        <button id="cmarketingbtn" onclick="cmarketingShow()">Corporate Marketing</button>
+        <button id="mlsebtn" onclick="mlseShow()">Maple Leaf Sports & Entertainment</button>
+        <button id="tmnbtn" onclick="tmnShow()">The Movie Network</button>
+      </div>
+      <div id="container"></div>
+    </div>
     <div class="push"></div>
   </div>
   <footer class="sitefooter">
@@ -157,7 +163,11 @@
     <i class="fa fa-angle-double-up"></i>
   </button>
   <script src="js/script2.js"></script>
-
+  <!-- <script>
+    window.onload = function() {
+    featuresShow();
+  };
+  </script> -->
 
 </body>
 

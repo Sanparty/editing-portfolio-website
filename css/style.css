@@ -373,12 +373,33 @@ hr.new1 {
 
 .videosection,
 .container,
+#container,
 .marketing,
-.features {
+.features,
+.buttons {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+.buttons {
+  margin-bottom: 20px;
+}
+.buttons button {
+  background-color: var(--secondary-background-color);
+  color: var(--secondary-text-color);
+  font-family: var(--secondary-font);
+  font-weight: var(--secondary-font-weight);
+  font-size: 15px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  line-height: 1;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
 }
 
 .nodisplay {
