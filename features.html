@@ -30,7 +30,7 @@
 
   <script type="module" src="./js/components/video.js"></script>
   <script type="module" src="./js/components/data.js"></script>
-  <script type="module" src="./js/script.js"></script>
+  <script type="module" src="./js/allspots.js"></script>
 
 
 </head>
@@ -120,10 +120,7 @@
     </header>
 
     <div class="full-container">
-      <div class="videosection nodisplay"></div>
-      <div class="container nodisplay"></div>
-      <div class="marketing nodisplay"></div>
-      <div class="features"></div>
+      <div id="container"></div>
     </div>
     <div class="push"></div>
   </div>
@@ -146,6 +143,11 @@
     <i class="fa fa-angle-double-up"></i>
   </button>
   <script src="js/script2.js"></script>
+  <script>
+    window.onload = function () {
+      featuresShow();
+    };
+  </script>
 </body>
 
 </html>
