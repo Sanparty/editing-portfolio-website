@@ -275,7 +275,6 @@ figure {
 
 .front_image_container {
   position: relative;
-  max-width: 300px;
   width: 50%;
   margin: 5px;
 }
@@ -448,7 +447,7 @@ hr.new1 {
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 620px) {
   .videosection,
   .container,
   .marketing,
@@ -461,6 +460,13 @@ hr.new1 {
   }
   .front_image_container {
     max-width: auto;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 620px) {
+  .front_image_container {
+    max-width: 300px;
     width: 100%;
   }
 }
