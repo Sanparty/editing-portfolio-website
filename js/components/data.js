@@ -165,7 +165,7 @@ const gb2 = new Video(
           false,
           "1:24",
           "Youtube",
-        `<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/J8OnanW2yVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`,
+        `<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/J8OnanW2yVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>`,
         "January 1, 2004",
         "none",
         "none"
@@ -494,9 +494,29 @@ const gb2 = new Video(
                   "none",
                   "features.html"
           );
+          const mlse6 = new Video(
+            "video23",
+            "Jozy Altidore: Sport Chek How The Pros Get Ready",
+            "Toronto FC and Sport Chek",
+            "Maple Leaf Sports and Entertainment",
+            "Social Media Marketing",
+            "Offline and Online Editor",
+            true,
+            true,
+            true,
+            true,
+            true,
+            "1:59",
+            "Youtube",
+          `<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/CGcxkVH65BA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>`,
+          "July 2, 2015",
+          "none",
+          "none",
+          "marketing.html"
+           );
 
 
-const videoObjectArray = [tmn1, hbo1, encore5, encore1, encore2, encore3, encore4, encore6, mlse1, mlse4, mlse5, gb1, movieent1, gb2, terminator, mpix1, mescape1, movieent2, xenophile1, xenophile2, tsn1, mpix2];
+const videoObjectArray = [tmn1, hbo1, encore5, encore1, encore2, encore3, encore4, encore6, mlse6, mlse1, mlse2, mlse3,mlse4, mlse5, gb1, movieent1, gb2, terminator, mpix1, mescape1, movieent2, xenophile1, xenophile2, tsn1, mpix2];
 
 // Export the array to be used in other files
 export default videoObjectArray;
