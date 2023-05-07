@@ -23,6 +23,7 @@ const terminator = new Video(
 
 );
 
+
 const mlse1 = new Video(
   "video02",
   "Purolator Undercover Employee With Jonas Valanciunas",
@@ -514,9 +515,32 @@ const gb2 = new Video(
           "none",
           "marketing.html"
            );
+           // added spiderman but it is still private
+           const spidermanStarz = new Video(
+            "video24",
+            "Spider-Man Trilogy Spot for Amazon",
+            "Starz",
+            "Bell Media",
+            "Promotions",
+            "Promo Producer",
+            true,
+            true,
+            true,
+            false,
+            false,
+            ":15",
+            "Vimeo",
+            `<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/824110372?h=289482483f&title=0&byline=0&portrait=0&speed=0&badge=0&autopause=0&player_id=0&app_id=58479/embed" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div>
+            `,
+            "May 5, 2023",
+            "images/THE TERMINATOR STARZ PROMO-low.mp4",
+            "mp4",
+            "promotions.html"
+          
+          );
 
 
-const videoObjectArray = [tmn1, hbo1, encore5, encore1, encore2, encore3, encore4, encore6, mlse6, mlse1, mlse2, mlse3,mlse4, mlse5, gb1, movieent1, gb2, terminator, mpix1, mescape1, movieent2, xenophile1, xenophile2, tsn1, mpix2];
+const videoObjectArray = [spidermanStarz, tmn1, hbo1, encore5, encore1, encore2, encore3, encore4, encore6, mlse6, mlse1, mlse2, mlse3,mlse4, mlse5, gb1, movieent1, gb2, terminator, mpix1, mescape1, movieent2, xenophile1, xenophile2, tsn1, mpix2];
 
 // Export the array to be used in other files
 export default videoObjectArray;
