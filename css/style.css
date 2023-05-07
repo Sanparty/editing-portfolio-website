@@ -431,7 +431,11 @@ hr.new1 {
 .email_icon {
   background-color: var(--third-background-color);
 }
-
+@media only screen and (max-width: 520px) {
+  .video {
+    padding: 10px;
+  }
+}
 @media only screen and (max-width: 750px) {
   .menubar {
     display: none;
