@@ -515,7 +515,6 @@ const gb2 = new Video(
           "none",
           "marketing.html"
            );
-           // added spiderman but it is still private
            const spidermanStarz = new Video(
             "video24",
             "Spider-Man Trilogy Spot for Amazon",
@@ -538,9 +537,52 @@ const gb2 = new Video(
             "promotions.html"
           
           );
+          const bellLightsOn1 = new Video(
+            "video25",
+            "Bell Campaign 9x16 Edit",
+            "Bell",
+            "Bell Media",
+            "Social Media Marketing",
+            "Offline Editor",
+            true,
+            false,
+            false,
+            false,
+            false,
+            ":25",
+            "Vimeo",
+            `<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/856906129?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Bell Campaign - 9x16 example"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            `,
+            "August 22, 2023",
+            "none",
+            "none",
+            "socialmedia.html"
+          
+          );
+          const bellLightsOn2 = new Video(
+            "video26",
+            "Bell Campaign 16x9 Edit",
+            "Bell",
+            "Bell Media",
+            "Social Media Marketing",
+            "Offline Editor",
+            true,
+            false,
+            false,
+            false,
+            false,
+            ":25",
+            "Vimeo",
+            `<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/856906154?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Bell Campaign - 16x9 example"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,
+            "August 22, 2023",
+            "none",
+            "none",
+            "socialmedia.html"
+          
+          );
 
 
-const videoObjectArray = [spidermanStarz, tmn1, hbo1, encore5, encore1, encore2, encore3, encore4, encore6, mlse6, mlse1, mlse2, mlse3,mlse4, mlse5, gb1, movieent1, gb2, terminator, mpix1, mescape1, movieent2, xenophile1, xenophile2, tsn1, mpix2];
+const videoObjectArray = [spidermanStarz, tmn1, hbo1, encore5, encore1, encore2, encore3, encore4, encore6, mlse6, mlse1, mlse2, mlse3,mlse4, mlse5, gb1, movieent1, gb2, terminator, mpix1, mescape1, movieent2, xenophile1, xenophile2, tsn1, mpix2, bellLightsOn2, bellLightsOn1 ];
 
 // Export the array to be used in other files
 export default videoObjectArray;
