@@ -135,6 +135,10 @@ figure {
   text-transform: uppercase;
   text-align: center;
 }
+#campaignTitle{
+  text-align: center;
+  margin-bottom: 2rem;
+}
 
 /* .siteheader:after {
   display: block;
@@ -372,6 +376,7 @@ hr.new1 {
 
 .videosection,
 .container,
+#campaignContainer,
 #container,
 .marketing,
 .features,
