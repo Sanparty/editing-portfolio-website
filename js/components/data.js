@@ -601,9 +601,30 @@ const gb2 = new Video(
             "promotions.html"
           
           );
+          const bpmtv2 = new Video(
+            "video28",
+            "BPM:TV presents... Oakenfold",
+            "BPM:TV",
+            "Stornoway Communications",
+            "Promotions",
+            "Offline and Online Editor, Graphic Design",
+            true,
+            true,
+            true,
+            true,
+            true,
+            ":30",
+            "Vimeo",
+            `<div style="padding:73.33% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/919010252?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="BPMTV Oakenfold Promo"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,
+            "March 4, 2024",
+            "none",
+            "none",
+            "promotions.html"
+          
+          );
 
 
-const videoObjectArray = [spidermanStarz, tmn1, hbo1, encore5, encore1, encore2, encore3, encore4, encore6, mlse6, mlse1, mlse2, mlse3,mlse4, mlse5, gb1, movieent1, gb2, terminator, mpix1, mescape1, movieent2, xenophile1, xenophile2, tsn1, mpix2, bellLightsOn2, bellLightsOn1, bpmtv1 ];
+const videoObjectArray = [spidermanStarz, tmn1, hbo1, encore5, encore1, encore2, encore3, encore4, encore6, mlse6, mlse1, mlse2, mlse3,mlse4, mlse5, gb1, movieent1, gb2, terminator, mpix1, mescape1, movieent2, xenophile1, xenophile2, tsn1, mpix2, bellLightsOn2, bellLightsOn1, bpmtv1, bpmtv2 ];
 
 // Export the array to be used in other files
 export default videoObjectArray;
