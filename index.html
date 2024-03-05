@@ -30,7 +30,33 @@
   <script type="module" src="./js/components/video.js"></script>
   <script type="module" src="./js/components/data.js"></script>
   <script type="module" src="./js/home.js"></script>
-
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init({
+        publicKey: "EVwDPvs94HElj1O62",
+      });
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // these IDs from the previous steps
+        emailjs.sendForm('jman_web', 'template_e28bu7j', this)
+          .then(() => {
+            console.log('SUCCESS!');
+            var element = document.getElementById("result_good");
+            element.classList.remove("nodisplay");
+          }, (error) => {
+            console.log('FAILED...', error);
+            var element = document.getElementById("result_bad");
+            element.classList.remove("nodisplay");
+          });
+      });
+    }
+  </script>
 
 </head>
 
@@ -62,22 +88,24 @@
     <!-- Overlay content -->
     <div class="email_overlay-content">
       <!-- <h2 id="contact-me">Contact Me</h2> -->
-      <form method="post" action="contact-form-process.php" class="contact-form">
+      <form id="contact-form" class="contact-form">
         <fieldset id="fieldset-contact">
           <legend>Contact Information</legend>
-          <label class="standard-label" for="contact-name" value="name">Name:</label>
-          <input type="text" id="contact-name" name="contact-name" minlength="5" required>
-          <label class="standard-label" for="contact-email">E-mail:</label>
-          <input type="email" id="contact-email" name="contact-email" required>
+          <label class="standard-label" for="lastName" value="name">Name:</label>
+          <input type="text" id="contact-name" name="lastName" minlength="5" required>
+          <label class="standard-label" for="emailAddress">E-mail:</label>
+          <input type="email" id="contact-email" name="emailAddress" required>
         </fieldset>
         <fieldset id="fieldset-message">
           <legend>Message</legend>
           <!-- <label class="standard-label" for="contact-message">Message:</label> -->
 
-          <textarea maxlength="240" id="contact-message" name="contact-message" required rows="5" cols="30"></textarea>
+          <textarea maxlength="240" id="contact-message" name="comment" required rows="5" cols="30"></textarea>
         </fieldset>
         <input type="submit" id="send-message" aria-label="Send Message" value="Send Message">
       </form>
+      <div id="result_good" class="nodisplay">Your message has been received. Thanks for contacting me.</div>
+      <div id="result_bad" class="nodisplay">Sorry, your message did not send correctly. Please try again later.'</div>
     </div>
 
   </div>
