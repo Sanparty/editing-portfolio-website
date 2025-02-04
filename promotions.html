@@ -1,177 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSP Promotions spots</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DSP Promotions spots</title>
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-
-  <link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="./css/style-overlay.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="./css/style-email-overlay.css" type="text/css" media="all" />
-  <!-- <link
+    <link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
+    <link
+      rel="stylesheet"
+      href="./css/style-overlay.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/style-email-overlay.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- <link
   rel="stylesheet"
   href="./css/style-dspedit.production.css"
   type="text/css"
   media="all"
   /> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Work+Sans:wght@100..900&display=swap"
-    rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Poppins:wght@100;200;300;400;700&display=swap"
-    rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Work+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Poppins:wght@100;200;300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
+    <script type="module" src="./js/components/video.js"></script>
+    <script type="module" src="./js/components/data.js"></script>
+    <script type="module" src="./js/allspots.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: "EVwDPvs94HElj1O62",
+        });
+      })();
+    </script>
+  </head>
 
-  <script type="module" src="./js/components/video.js"></script>
-  <script type="module" src="./js/components/data.js"></script>
-  <script type="module" src="./js/allspots.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      // https://dashboard.emailjs.com/admin/account
-      emailjs.init({
-        publicKey: "EVwDPvs94HElj1O62",
-      });
-    })();
-  </script>
+  <body>
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
 
-</head>
-
-<body>
-  <!-- The overlay -->
-  <div id="myNav" class="overlay">
-
-    <!-- Button to close the overlay navigation -->
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-    <!-- Overlay content -->
-    <div class="overlay-content">
-      <a href="index.html">HOME</a>
-      <a href="promotions.html">PROMOTIONS</a>
-      <a href="features.html">FEATURES</a>
-      <a href="marketing.html">MARKETING</a>
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="index.html">HOME</a>
+        <a href="promotions.html">PROMOTIONS</a>
+        <a href="features.html">FEATURES</a>
+        <a href="marketing.html">MARKETING</a>
+      </div>
     </div>
 
-  </div>
+    <!-- Use any element to open/show the overlay navigation menu -->
 
-  <!-- Use any element to open/show the overlay navigation menu -->
+    <!-- The email overlay -->
+    <div id="myEmail" class="email_overlay">
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn_email" onclick="closeEmail()"
+        >&times;</a
+      >
 
-  <!-- The email overlay -->
-  <div id="myEmail" class="email_overlay">
+      <!-- Overlay content -->
+      <div class="email_overlay-content">
+        <!-- <h2 id="contact-me">Contact Me</h2> -->
+        <form id="contact-form" class="contact-form">
+          <fieldset id="fieldset-contact">
+            <legend>Contact Information</legend>
+            <label class="standard-label" for="lastName" value="name"
+              >Name:</label
+            >
+            <input
+              type="text"
+              id="contact-name"
+              name="lastName"
+              minlength="5"
+              required
+            />
+            <label class="standard-label" for="emailAddress">E-mail:</label>
+            <input
+              type="email"
+              id="contact-email"
+              name="emailAddress"
+              required
+            />
+          </fieldset>
+          <fieldset id="fieldset-message">
+            <legend>Message</legend>
+            <!-- <label class="standard-label" for="contact-message">Message:</label> -->
 
-    <!-- Button to close the overlay navigation -->
-    <a href="javascript:void(0)" class="closebtn_email" onclick="closeEmail()">&times;</a>
-
-    <!-- Overlay content -->
-    <div class="email_overlay-content">
-      <!-- <h2 id="contact-me">Contact Me</h2> -->
-      <form id="contact-form" class="contact-form">
-        <fieldset id="fieldset-contact">
-          <legend>Contact Information</legend>
-          <label class="standard-label" for="lastName" value="name">Name:</label>
-          <input type="text" id="contact-name" name="lastName" minlength="5" required>
-          <label class="standard-label" for="emailAddress">E-mail:</label>
-          <input type="email" id="contact-email" name="emailAddress" required>
-        </fieldset>
-        <fieldset id="fieldset-message">
-          <legend>Message</legend>
-          <!-- <label class="standard-label" for="contact-message">Message:</label> -->
-
-          <textarea maxlength="240" id="contact-message" name="comment" required rows="5" cols="30"></textarea>
-        </fieldset>
-        <input type="submit" id="send-message" aria-label="Send Message" value="Send Message">
-      </form>
-      <div id="result_good" class="nodisplay">Your message has been received. Thanks for contacting me.</div>
-      <div id="result_bad" class="nodisplay">Sorry, your message did not send correctly. Please try again later.'</div>
-    </div>
-
-  </div>
-
-  <!-- Use any element to open/show the overlay navigation menu -->
-
-
-  <div class="wrapper">
-    <div class="header">
-
-      <div class="menubar">
-        <div class="menubar-list">
-          <div class="menubar-list menuitem"><a href="index.html">HOME</a></div>
-          <div class="menubar-list menuitem"><a href="promotions.html">PROMOTIONS</a></div>
-          <div class="menubar-list menuitem"><a href="features.html">FEATURES</a></div>
-          <div class="menubar-list menuitem"><a href="marketing.html">MARKETING</a></div>
-          <div class="menubar-list menuitem email_link"><span style="font-size:30px;cursor:pointer;color:white"
-              onclick="openEmail()"><img class="email_icon" src="images/134147_mail_email_icon.svg"
-                alt="Contact Me"></span></div>
+            <textarea
+              maxlength="240"
+              id="contact-message"
+              name="comment"
+              required
+              rows="5"
+              cols="30"
+            ></textarea>
+          </fieldset>
+          <input
+            type="submit"
+            id="send-message"
+            aria-label="Send Message"
+            value="Send Message"
+          />
+        </form>
+        <div id="result_good" class="nodisplay">
+          Your message has been received. Thanks for contacting me.
+        </div>
+        <div id="result_bad" class="nodisplay">
+          Sorry, your message did not send correctly. Please try again later.'
         </div>
       </div>
-      <div class="menubar_overlay_button">
-        <div><span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776;</span></div>
-        <div class="menubar-list menuitem email_link"><span id="email_link_bar"
-            style="font-size:30px;cursor:pointer;color:white" onclick="openEmail()"><img class="email_icon"
-              src="images/134147_mail_email_icon.svg" alt="Contact Me"></span></div>
+    </div>
 
-      </div>
-      <!-- <div class="social-media">
+    <!-- Use any element to open/show the overlay navigation menu -->
+
+    <div class="wrapper">
+      <div class="header">
+        <div class="menubar">
+          <div class="menubar-list">
+            <div class="menubar-list menuitem">
+              <a href="index.html">HOME</a>
+            </div>
+            <div class="menubar-list menuitem">
+              <a href="promotions.html">PROMOTIONS</a>
+            </div>
+            <div class="menubar-list menuitem">
+              <a href="features.html">FEATURES</a>
+            </div>
+            <div class="menubar-list menuitem">
+              <a href="marketing.html">MARKETING</a>
+            </div>
+            <div class="menubar-list menuitem email_link">
+              <span
+                style="font-size: 30px; cursor: pointer; color: white"
+                onclick="openEmail()"
+                ><img
+                  class="email_icon"
+                  src="images/134147_mail_email_icon.svg"
+                  alt="Contact Me"
+              /></span>
+            </div>
+          </div>
+        </div>
+        <div class="menubar_overlay_button">
+          <div>
+            <span
+              style="font-size: 30px; cursor: pointer; color: white"
+              onclick="openNav()"
+              >&#9776;</span
+            >
+          </div>
+          <div class="menubar-list menuitem email_link">
+            <span
+              id="email_link_bar"
+              style="font-size: 30px; cursor: pointer; color: white"
+              onclick="openEmail()"
+              ><img
+                class="email_icon"
+                src="images/134147_mail_email_icon.svg"
+                alt="Contact Me"
+            /></span>
+          </div>
+        </div>
+        <!-- <div class="social-media">
         <a href="https://github.com/Sanparty" target="_blank" class="social-media_logo"><img src="images/1298743_github_git_logo_social_icon.svg" alt="Github" ></a>
         <a href="https://twitter.com/Sanparty" target="_blank" class="social-media_logo"><img src="images/294709_circle_twitter_icon.svg" alt="Twitter" ></a>
         <a href="https://www.linkedin.com/in/dsanpedro/" target="_blank" class="social-media_logo"><img src="images/317750_linkedin_icon.svg" alt="Linkedin" ></a>
         <a href="https://vimeo.com/dansp" target="_blank" class="social-media_logo"><img src="images/381370_logo_vimeo_icon.svg" alt="Vimeo" ></a>
     </div> -->
-    </div>
-    <header class="siteheader">
-      <div class="site-title">DSP Portfolio</div>
-      <div class="site-description">Check out Promotions spots I've worked on:</div>
-    </header>
+      </div>
+      <header class="siteheader">
+        <div class="site-title">DSP Portfolio</div>
+        <div class="site-description">
+          Check out Promotions spots I've worked on:
+        </div>
+      </header>
 
-    <div class="full-container">
-      <div id="container"></div>
+      <div class="full-container">
+        <div id="container"></div>
+      </div>
+      <div class="push"></div>
     </div>
-    <div class="push"></div>
-  </div>
-  <footer class="sitefooter">
-    <div class="rights-text">
-      &copy
-      <script>document.write(new Date().getFullYear());</script>, Dan San Pedro. All Rights Reserved
-    </div>
-    <div class="social-media">
-      <a href="https://github.com/Sanparty" target="_blank" class="social-media_logo"><img
-          src="images/291716_github_logo_social network_social_icon.svg" alt="Github"></a>
-      <a href="https://twitter.com/Sanparty" target="_blank" class="social-media_logo"><img
-          src="images/2083194_connection_media_share_social_twitter_icon.svg" alt="Twitter"></a>
-      <a href="https://www.linkedin.com/in/dsanpedro/" target="_blank" class="social-media_logo"><img
-          src="images/194920_linkedin_social media_icon.svg" alt="Linkedin"></a>
-      <a href="https://vimeo.com/dansp" target="_blank" class="social-media_logo"><img
-          src="images/2083189_media_movie_share_social_video_icon.svg" alt="Vimeo"></a>
-    </div>
-  </footer>
-  <button onclick="topFunction()" id="myBtn" title="Go to top">
-    <i class="fa fa-angle-double-up"></i>
-  </button>
-  <script src="js/script2.js"></script>
-  <script>
-    window.onload = function () {
-      promotionsShow();
-      document.getElementById('contact-form').addEventListener('submit', function (event) {
-        event.preventDefault();
-        // these IDs from the previous steps
-        emailjs.sendForm('jman_web', 'template_e28bu7j', this)
-          .then(() => {
-            console.log('SUCCESS!');
-            var element = document.getElementById("result_good");
-            element.classList.remove("nodisplay");
-          }, (error) => {
-            console.log('FAILED...', error);
-            var element = document.getElementById("result_bad");
-            element.classList.remove("nodisplay");
+    <footer class="sitefooter">
+      <div class="rights-text">
+        &copy
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        , Dan San Pedro. All Rights Reserved
+      </div>
+      <div class="social-media">
+        <a
+          href="https://github.com/Sanparty"
+          target="_blank"
+          class="social-media_logo"
+          ><img
+            src="images/291716_github_logo_social network_social_icon.svg"
+            alt="Github"
+        /></a>
+        <!-- <a href="https://twitter.com/Sanparty" target="_blank" class="social-media_logo"><img
+          src="images/2083194_connection_media_share_social_twitter_icon.svg" alt="Twitter"></a> -->
+        <a
+          href="https://www.linkedin.com/in/dsanpedro/"
+          target="_blank"
+          class="social-media_logo"
+          ><img
+            src="images/194920_linkedin_social media_icon.svg"
+            alt="Linkedin"
+        /></a>
+        <a
+          href="https://vimeo.com/dansp"
+          target="_blank"
+          class="social-media_logo"
+          ><img
+            src="images/2083189_media_movie_share_social_video_icon.svg"
+            alt="Vimeo"
+        /></a>
+      </div>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa fa-angle-double-up"></i>
+    </button>
+    <script src="js/script2.js"></script>
+    <script>
+      window.onload = function () {
+        promotionsShow();
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            // these IDs from the previous steps
+            emailjs.sendForm("jman_web", "template_e28bu7j", this).then(
+              () => {
+                console.log("SUCCESS!");
+                var element = document.getElementById("result_good");
+                element.classList.remove("nodisplay");
+              },
+              (error) => {
+                console.log("FAILED...", error);
+                var element = document.getElementById("result_bad");
+                element.classList.remove("nodisplay");
+              }
+            );
           });
-      });
-    };
-  </script>
-</body>
-
+      };
+    </script>
+  </body>
 </html>
