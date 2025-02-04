@@ -363,7 +363,7 @@ hr.new1 {
 .social-media_logo {
   transition: all 0.2s ease;
   opacity: 0.8;
-  padding: 0 5px;
+  padding: 0 3px;
 }
 
 .social-media_logo:hover,
