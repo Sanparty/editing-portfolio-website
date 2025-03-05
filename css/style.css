@@ -3,8 +3,8 @@
   --secondary-color: gray;
   --text-color: black;
   --secondary-text-color: white;
-  --primary-background-color: lightblue;
-  --secondary-background-color: black;
+  --primary-background-color: white;
+  --secondary-background-color: grey;
   --third-background-color: white;
   --button-text-color: white;
   --responsive-margin-top: 0;
@@ -62,7 +62,6 @@ figure {
 .menubar {
   margin: 0;
   width: 50%;
-  border-bottom: 3px solid var(--primary-color);
 }
 
 .menubar-list {
