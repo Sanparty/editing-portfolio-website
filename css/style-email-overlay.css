@@ -3,7 +3,7 @@
   width: 100%;
   display: none;
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 98; /* Sit on top */
   background-color: rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0.9);
   transition: 0.5s;
@@ -39,7 +39,7 @@
   top: 20%;
   right: 5%;
   font-size: 30px;
-  z-index: 2;
+  z-index: 99;
 }
 
 .standard-label {
