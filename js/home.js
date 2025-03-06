@@ -4,7 +4,7 @@ let homeimagesall = videoObjectArray.filter(
   (video) => video.imagetype === "mp4"
 );
 
-var homeimages = homeimagesall.filter((video, idx) => idx < 6);
+var homeimages = homeimagesall.filter((video, idx) => idx < 9);
 
 // console.log("These are all the video objects with mp4s:", homeimagesall);
 // console.log("These are first 6 video objects with mp4s", homeimages);
