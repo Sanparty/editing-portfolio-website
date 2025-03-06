@@ -2,9 +2,9 @@
   --primary-color: white;
   --secondary-color: gray;
   --text-color: white;
-  --secondary-text-color: white;
+  --secondary-text-color: black;
   --primary-background-color: black;
-  --secondary-background-color: black;
+  --secondary-background-color: white;
   --third-background-color: white;
   --button-text-color: white;
   --responsive-margin-top: 0;
@@ -71,7 +71,7 @@ figure {
 }
 
 .menuitem {
-  color: var(--secondary-text-color);
+  color: var(--text-color);
   flex-shrink: 0;
   font-family: var(--secondary-font);
   font-weight: var(--secondary-font-weight);
@@ -86,7 +86,7 @@ figure {
 .menuitem a,
 .menuitem a:visited,
 .menuitem a:link {
-  color: var(--secondary-text-color);
+  color: var(--text-color);
 }
 
 .menuitem:hover {
@@ -109,7 +109,7 @@ figure {
   justify-content: center;
   text-align: center;
   align-items: center;
-  background-color: var(--secondary-background-color);
+  background-color: var(--primary-background-color);
   position: fixed;
   top: 0;
   width: 100%;
@@ -306,8 +306,6 @@ figure {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
-  /* outline: black solid; */
 }
 
 hr.new1 {
@@ -320,8 +318,6 @@ hr.new1 {
   font-weight: var(--secondary-font-weight);
   text-transform: uppercase;
   text-align: left;
-
-  /* border-bottom: 3px solid black; */
   position: absolute;
   top: 75%;
 
@@ -346,7 +342,7 @@ hr.new1 {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background: var(--secondary-background-color);
+  background: var(--primary-background-color);
   color: white;
 }
 
@@ -439,11 +435,6 @@ hr.new1 {
 
 .email_icon {
   background-color: var(--third-background-color);
-}
-.standard-label,
-legend,
-.closebtn_email {
-  color: black;
 }
 
 @media only screen and (max-width: 520px) {

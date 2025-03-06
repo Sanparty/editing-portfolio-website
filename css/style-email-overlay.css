@@ -27,7 +27,7 @@
   font-family: var(--secondary-font);
   font-size: 20px;
   font-weight: var(--secondary-font-weight);
-  color: var(--text-color);
+  color: var(--secondary-text-color);
   width: 90%;
 }
 
@@ -86,9 +86,11 @@
   font-weight: bold;
   text-align: center;
   margin-top: 10px;
-  color: black;
 }
 
+.closebtn_email {
+  color: var(--secondary-text-color);
+}
 @media screen and (max-width: 750px) {
   .email_overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */
@@ -174,6 +176,6 @@
     top: 80%;
     right: 2%;
     font-size: 30px;
-    color: var(--text-color);
+    color: var(--secondary-text-color);
   }
 }
