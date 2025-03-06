@@ -1,15 +1,15 @@
 :root {
-  --primary-color: black;
+  --primary-color: white;
   --secondary-color: gray;
-  --text-color: black;
+  --text-color: white;
   --secondary-text-color: white;
-  --primary-background-color: white;
-  --secondary-background-color: grey;
+  --primary-background-color: black;
+  --secondary-background-color: black;
   --third-background-color: white;
   --button-text-color: white;
   --responsive-margin-top: 0;
   --responsive-margin-top-large: 10px;
-  --primary-font: "Work Sans", sans-serif;
+  --primary-font: "Work San=", sans-serif;
   --secondary-font: "Oswald", sans-serif;
   --body-font-weight: 300;
   --secondary-font-weight: 700;
@@ -133,6 +133,10 @@ figure {
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+  color: var(--text-color);
+}
+.site-description {
+  color: var(--text-color);
 }
 #campaignTitle {
   text-align: center;
@@ -204,7 +208,8 @@ figure {
   font-size: 18px;
   line-height: 1;
   text-transform: uppercase;
-  border-bottom: 3px solid var(--primary-color);
+  color: var(--text-color);
+  border-bottom: 0.5px solid var(--primary-color);
 }
 
 .image__genre {
@@ -221,6 +226,7 @@ figure {
   margin: 0;
   padding: 1rem 0 0;
   list-style-type: none;
+  color: var(--text-color);
 }
 
 .video__details li {
@@ -261,8 +267,8 @@ figure {
 
 .front_image {
   width: 100%;
-  border-radius: 5px;
-  outline: var(--primary-color) solid;
+  /* border-radius: 5px;
+  outline: var(--primary-color) solid; */
   transition: all 1s ease;
   display: block;
   height: auto;
@@ -305,7 +311,7 @@ figure {
 }
 
 hr.new1 {
-  border: 2px solid var(--primary-color);
+  border: 0.5px solid var(--primary-color);
   width: 100%;
 }
 
@@ -321,7 +327,7 @@ hr.new1 {
 
   /* background: rgb(100, 100, 100);
   background: rgba(255, 255, 255, 0.5); Black see-through */
-  color: var(--primary-color);
+  color: var(--text-color);
   width: 100%;
   transition: 0.5s ease;
   opacity: 0;
@@ -434,6 +440,12 @@ hr.new1 {
 .email_icon {
   background-color: var(--third-background-color);
 }
+.standard-label,
+legend,
+.closebtn_email {
+  color: black;
+}
+
 @media only screen and (max-width: 520px) {
   .video {
     padding: 10px;

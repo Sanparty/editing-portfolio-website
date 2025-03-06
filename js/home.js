@@ -1,10 +1,10 @@
 import videoObjectArray from "./components/data.js";
 
-let homeimagesall = videoObjectArray.filter(video => video.imagetype === "mp4");
+let homeimagesall = videoObjectArray.filter(
+  (video) => video.imagetype === "mp4"
+);
 
-var homeimages = homeimagesall.filter((video,idx) => idx < 6)
-
-
+var homeimages = homeimagesall.filter((video, idx) => idx < 6);
 
 // console.log("These are all the video objects with mp4s:", homeimagesall);
 // console.log("These are first 6 video objects with mp4s", homeimages);
@@ -22,14 +22,11 @@ const imageList = homeimages.map((video) => {
     <div class="image_text"><a href="${video.pagelink}"><span>${video.genre}</span><hr class="new1"></a></div>
   `;
 
-
   return videoArticle;
 });
-
-
 
 const frontpage = document.querySelector(".image-block");
 
 imageList.forEach((video) => {
-  frontpage.append(video)
+  frontpage.append(video);
 });
