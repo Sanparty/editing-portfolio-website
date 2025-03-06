@@ -86,6 +86,7 @@
   font-weight: bold;
   text-align: center;
   margin-top: 10px;
+  color: black;
 }
 
 @media screen and (max-width: 750px) {
