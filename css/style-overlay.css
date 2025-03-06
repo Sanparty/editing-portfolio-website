@@ -64,7 +64,7 @@
     justify-content: space-between;
     margin: 0 10px;
     width: 100%;
-    border-bottom: 3px solid var(--primary-color);
+    /* border-bottom: 3px solid var(--primary-color); */
     align-items: center;
   }
 }
