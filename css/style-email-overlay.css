@@ -1,34 +1,25 @@
 .email_overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */
-  height: 55%;
-  width: 40%;
+  height: 100%;
+  width: 100%;
   display: none;
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 30%;
-  top: 25%;
-  border-radius: 20px;
-  outline-style: inset;
-  outline-width: 3px;
-  /* background-image: url(../images/avid_edit_screen.png);
-  background-position: center;
-  background-repeat: no-repeat; */
+  z-index: 98; /* Sit on top */
   background-color: rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0.9);
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  transition: 0.5s;
 }
 
 .email_overlay-content {
   position: relative;
-  top: 2%;
+  top: 20%;
   margin: 0 auto;
   padding: 0 10px;
   text-align: left;
   font-family: var(--secondary-font);
   font-size: 20px;
   font-weight: var(--secondary-font-weight);
-  color: var(--text-color);
-  width: 90%;
+  color: var(--secondary-text-color);
+  width: 50%;
 }
 
 #fieldset-contact {
@@ -45,10 +36,9 @@
 
 .email_overlay .closebtn_email {
   position: absolute;
-  top: 2%;
-  right: 2%;
+  right: 1%;
   font-size: 30px;
-  color: var(--text-color);
+  z-index: 99;
 }
 
 .standard-label {
@@ -89,41 +79,26 @@
   margin-top: 10px;
 }
 
-@media screen and (max-width: 750px) {
-  .email_overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */
-    height: 55%;
-    width: 90%;
-    left: 5%;
-    top: 25%;
-  }
-  .email_overlay-content {
-    top: 0%;
-  }
+.closebtn_email {
+  color: var(--secondary-text-color);
 }
 #email_link_bar {
   display: inherit;
   padding-right: 2px;
   margin-top: 5px;
 }
-@media screen and (max-height: 850px) {
-  .email_overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */
-    height: 72%;
-    width: 80%;
-    left: 10%;
-    top: 14%;
+
+@media screen and (max-width: 900px) {
+  .email_overlay-content {
+    width: 75%;
   }
 }
-
-@media screen and (max-height: 700px) {
-  .email_overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */
-    height: 86%;
-    width: 96%;
-    left: 2%;
-    top: 7%;
+@media screen and (max-width: 500px) {
+  .email_overlay-content {
+    width: 95%;
   }
+}
+@media screen and (max-height: 700px) {
   .standard-label {
     font-size: 15px;
   }
@@ -136,20 +111,11 @@
 }
 
 @media screen and (max-height: 400px) {
-  .email_overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */
-    height: 86%;
-    width: 96%;
-    left: 2%;
-    top: 10%;
-  }
-
   .contact-form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-
   #contact-name,
   #contact-email,
   #contact-tel,
@@ -163,17 +129,5 @@
   #send-message {
     max-height: 30px;
     margin: 10px;
-  }
-
-  .email_overlay-content {
-    width: 100%;
-  }
-
-  .email_overlay .closebtn_email {
-    position: absolute;
-    top: 80%;
-    right: 2%;
-    font-size: 30px;
-    color: var(--text-color);
   }
 }

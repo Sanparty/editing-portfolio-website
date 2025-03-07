@@ -4,7 +4,7 @@
   height: 0%;
   width: 100%;
   position: fixed; /* Stay in place */
-  z-index: 2; /* Sit on top */
+  z-index: 97; /* Sit on top */
   left: 0;
   top: 0;
   background-color: rgb(0, 0, 0); /* Black fallback color */
@@ -64,7 +64,7 @@
     justify-content: space-between;
     margin: 0 10px;
     width: 100%;
-    border-bottom: 3px solid var(--primary-color);
+    /* border-bottom: 3px solid var(--primary-color); */
     align-items: center;
   }
 }

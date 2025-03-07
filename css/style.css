@@ -1,15 +1,15 @@
 :root {
-  --primary-color: black;
+  --primary-color: white;
   --secondary-color: gray;
-  --text-color: black;
-  --secondary-text-color: white;
-  --primary-background-color: lightblue;
-  --secondary-background-color: black;
+  --text-color: white;
+  --secondary-text-color: black;
+  --primary-background-color: black;
+  --secondary-background-color: white;
   --third-background-color: white;
   --button-text-color: white;
   --responsive-margin-top: 0;
   --responsive-margin-top-large: 10px;
-  --primary-font: "Work Sans", sans-serif;
+  --primary-font: "Work San=", sans-serif;
   --secondary-font: "Oswald", sans-serif;
   --body-font-weight: 300;
   --secondary-font-weight: 700;
@@ -62,7 +62,6 @@ figure {
 .menubar {
   margin: 0;
   width: 50%;
-  border-bottom: 3px solid var(--primary-color);
 }
 
 .menubar-list {
@@ -72,7 +71,7 @@ figure {
 }
 
 .menuitem {
-  color: var(--secondary-text-color);
+  color: var(--text-color);
   flex-shrink: 0;
   font-family: var(--secondary-font);
   font-weight: var(--secondary-font-weight);
@@ -87,7 +86,7 @@ figure {
 .menuitem a,
 .menuitem a:visited,
 .menuitem a:link {
-  color: var(--secondary-text-color);
+  color: var(--text-color);
 }
 
 .menuitem:hover {
@@ -110,7 +109,7 @@ figure {
   justify-content: center;
   text-align: center;
   align-items: center;
-  background-color: var(--secondary-background-color);
+  background-color: var(--primary-background-color);
   position: fixed;
   top: 0;
   width: 100%;
@@ -134,6 +133,10 @@ figure {
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+  color: var(--text-color);
+}
+.site-description {
+  color: var(--text-color);
 }
 #campaignTitle {
   text-align: center;
@@ -205,7 +208,8 @@ figure {
   font-size: 18px;
   line-height: 1;
   text-transform: uppercase;
-  border-bottom: 3px solid var(--primary-color);
+  color: var(--text-color);
+  border-bottom: 0.5px solid var(--primary-color);
 }
 
 .image__genre {
@@ -222,6 +226,7 @@ figure {
   margin: 0;
   padding: 1rem 0 0;
   list-style-type: none;
+  color: var(--text-color);
 }
 
 .video__details li {
@@ -262,8 +267,8 @@ figure {
 
 .front_image {
   width: 100%;
-  border-radius: 5px;
-  outline: var(--primary-color) solid;
+  /* border-radius: 5px;
+  outline: var(--primary-color) solid; */
   transition: all 1s ease;
   display: block;
   height: auto;
@@ -301,12 +306,10 @@ figure {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
-  /* outline: black solid; */
 }
 
 hr.new1 {
-  border: 2px solid var(--primary-color);
+  border: 0.5px solid var(--primary-color);
   width: 100%;
 }
 
@@ -315,14 +318,12 @@ hr.new1 {
   font-weight: var(--secondary-font-weight);
   text-transform: uppercase;
   text-align: left;
-
-  /* border-bottom: 3px solid black; */
   position: absolute;
   top: 75%;
 
   /* background: rgb(100, 100, 100);
   background: rgba(255, 255, 255, 0.5); Black see-through */
-  color: var(--primary-color);
+  color: var(--text-color);
   width: 100%;
   transition: 0.5s ease;
   opacity: 0;
@@ -341,7 +342,7 @@ hr.new1 {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background: var(--secondary-background-color);
+  background: var(--primary-background-color);
   color: white;
 }
 
@@ -414,7 +415,7 @@ hr.new1 {
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
+  z-index: 96; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: solid var(--secondary-color) thin; /* Remove outline */
   background-color: transparent; /* Set a background color */
@@ -435,9 +436,13 @@ hr.new1 {
 .email_icon {
   background-color: var(--third-background-color);
 }
+
 @media only screen and (max-width: 520px) {
   .video {
     padding: 10px;
+  }
+  .image-block {
+    margin: 0 auto;
   }
 }
 @media only screen and (max-width: 750px) {
