@@ -436,6 +436,9 @@ hr.new1 {
 .email_icon {
   background-color: var(--third-background-color);
 }
+.blur {
+  filter: blur(5px);
+}
 
 @media only screen and (max-width: 520px) {
   .video {
