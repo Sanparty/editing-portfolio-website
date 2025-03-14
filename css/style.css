@@ -290,10 +290,8 @@ figure {
 
 .front_image_container:hover .image_text {
   opacity: 1;
-  top: 35%;
+  top: 50%;
   transition: all 0.5s ease;
-  text-align: center;
-  outline: 1px solid var(--secondary-color);
 }
 
 .front_image_container:hover .front_image {
@@ -316,15 +314,15 @@ figure {
   font-family: var(--secondary-font);
   font-weight: var(--secondary-font-weight);
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   position: absolute;
   top: 75%;
   color: var(--text-color);
   width: 100%;
   transition: 0.5s ease;
   opacity: 0;
-  font-size: 20px;
-  padding: 10px;
+  font-size: 1.25rem;
+  padding: 0 10px;
 }
 
 .sitefooter {
@@ -448,7 +446,7 @@ span.genreLink:hover {
 } */
 
 hr.new1 {
-  border: 0.5px solid var(--primary-color);
+  border: 0.5px solid var(--secondary-color);
   width: 100%;
   transition: 0.3s;
 }

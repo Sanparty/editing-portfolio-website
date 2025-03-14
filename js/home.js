@@ -19,7 +19,7 @@ const imageList = homeimages.map((video) => {
   <source type="video/mp4" src="./${video.image}">
   </video>
   </a>
-    <div class="image_text"><a href="${video.pagelink}"><span class="genreLink">${video.genre}</span></a></div>
+   <div class="image_text"><a href="${video.pagelink}"><span>${video.genre}</span><hr class="new1"></a></div>
   `;
 
   return videoArticle;
