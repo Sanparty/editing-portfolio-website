@@ -31,7 +31,7 @@
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: var(--secondary-color);
+  color: var(--text-color);
   display: block; /* Display block instead of inline */
   transition: 0.3s; /* Transition effects on hover (color) */
 }
@@ -39,7 +39,7 @@
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover,
 .overlay a:focus {
-  color: var(--secondary-text-color);
+  color: var(--secondary-color);
 }
 
 /* Position the close button (top right corner) */
