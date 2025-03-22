@@ -15,7 +15,7 @@ const imageList = homeimages.map((video) => {
 
   videoArticle.innerHTML = `
   <a href="${video.pagelink}">   
-  <video class="front_image" autoplay loop muted width="480" height="270">
+  <video class="front_image fadeInUp-animation" autoplay loop muted width="480" height="270">
   <source type="video/mp4" src="./${video.image}">
   </video>
   </a>
