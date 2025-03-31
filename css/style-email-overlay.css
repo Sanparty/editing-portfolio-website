@@ -4,8 +4,7 @@
   display: none;
   position: fixed; /* Stay in place */
   z-index: 98; /* Sit on top */
-  background-color: rgb(255, 255, 255);
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   transition: 0.5s;
 }
 
@@ -18,7 +17,7 @@
   font-family: var(--secondary-font);
   font-size: 20px;
   font-weight: var(--secondary-font-weight);
-  color: var(--secondary-text-color);
+  color: var(--text-color);
   width: 50%;
 }
 
@@ -39,6 +38,7 @@
   right: 1%;
   font-size: 30px;
   z-index: 99;
+  color: var(--text-color);
 }
 
 .standard-label {
@@ -53,14 +53,20 @@
   width: 100%;
   margin: 10px 0;
   padding: 5px;
+  background-color: var(--primary-background-color);
+  color: var(--text-color);
 }
 
 #send-message {
+  align-self: center;
   text-transform: uppercase;
+  background-color: var(--primary-background-color);
+  color: var(--text-color);
   font-family: var(--secondary-font);
   font-size: 20px;
   font-weight: var(--secondary-font-weight);
-  margin-top: 10px;
+  margin-top: 20px;
+  width: auto;
 }
 
 .email_link {
