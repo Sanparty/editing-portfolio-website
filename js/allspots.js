@@ -1,102 +1,99 @@
-console.log('this is working');
-
+console.log("this is working");
 
 import videoObjectArray from "./components/data.js";
 
 //differet genre videos
 
 let promotionsVideos = videoObjectArray.filter(function (item) {
-    return item.genre == 'Promotions';
+  return item.genre == "Promotions";
 });
 
 let smarketingVideos = videoObjectArray.filter(function (item) {
-    return item.genre == "Social Media Marketing";
+  return item.genre == "Social Media Marketing";
 });
 
 let cmarketingVideos = videoObjectArray.filter(function (item) {
-    return item.genre == "Corporate Marketing";
+  return item.genre == "Corporate Marketing";
 });
 
 let featuresVideos = videoObjectArray.filter(function (item) {
-    return item.genre == 'Features';
+  return item.genre == "Features";
 });
 
 let mlseVideos = videoObjectArray.filter(function (item) {
-    return item.client == 'Maple Leaf Sports and Entertainment';
+  return item.client == "Maple Leaf Sports and Entertainment";
 });
 
 let tmnVideos = videoObjectArray.filter(function (item) {
-    return (item.brand == 'The Movie Network' || item.brand == 'The Movie Network Encore');  
+  return (
+    item.brand == "The Movie Network" ||
+    item.brand == "The Movie Network Encore"
+  );
 });
 
 let marketingVideos = videoObjectArray.filter(function (item) {
-    return (item.genre == "Social Media Marketing" || item.genre == "Corporate Marketing");  
+  return (
+    item.genre == "Social Media Marketing" ||
+    item.genre == "Corporate Marketing"
+  );
 });
 
 let campaignVideos = videoObjectArray.filter(function (item) {
-    return item.genre == "Social Media Campaign";
+  return item.genre == "Social Media Campaign";
 });
 
-
-console.log (tmnVideos);
-
-
-
-
-
+console.log(tmnVideos);
 
 // new array code attempt
 
-
 window.promotionsShow = function promotionsShow() {
-    promotions()
-}
+  promotions();
+};
 
 window.featuresShow = function featuresShow() {
-    features()
-}
+  features();
+};
 
 window.smarketingShow = function smarketingShow() {
-    smarketing()
-}
-
+  smarketing();
+};
 
 window.cmarketingShow = function cmarketingShow() {
-    cmarketing()
-}
+  cmarketing();
+};
 
 window.mlseShow = function mlseShow() {
-    mlse()
-}
+  mlse();
+};
 
 window.tmnShow = function tmnShow() {
-    tmn()
-}
+  tmn();
+};
 
 window.marketingShow = function marketingShow() {
-    marketing()
-}
+  marketing();
+};
 window.campaignShow = function campaignShow() {
-    campaign()
-}
+  campaign();
+};
 // let promotionsButton = document.getElementById('promotionsBtn');
 // let featuresButton = document.getElementById('featuresBtn');
 // let smarketingButton = document.getElementById('smarketingBtn');
 // let cmarketingButton = document.getElementById('cmarketingBtn');
 
-let container = document.getElementById('container');
-let campaignContainer = document.getElementById('campaignContainer');
-console.log('Container text: ' + container.innerHTML);
+let container = document.getElementById("container");
+let campaignContainer = document.getElementById("campaignContainer");
+console.log("Container text: " + container.innerHTML);
 
 function promotions() {
-    container.innerHTML = "";
-    
-    const promotionslist = promotionsVideos.map((video) => {
-        let videoArticle = document.createElement("div");
-        videoArticle.classList.add("video");
-        videoArticle.setAttribute("id", video.id);
+  container.innerHTML = "";
 
-        videoArticle.innerHTML = `
+  const promotionslist = promotionsVideos.map((video) => {
+    let videoArticle = document.createElement("div");
+    videoArticle.classList.add("video");
+    videoArticle.setAttribute("id", video.id);
+
+    videoArticle.innerHTML = `
       <figure class="video__spot">
        ${video.videolocation}
       </figure>
@@ -110,28 +107,25 @@ function promotions() {
       </ul>
     `;
 
+    return videoArticle;
+  });
 
-        return videoArticle;
-    });
-
-
-    promotionslist.forEach((video) => {
-        container.append(video)
-    });
-
+  promotionslist.forEach((video) => {
+    container.append(video);
+  });
 }
 
 // Features
 
 function features() {
-    container.innerHTML = "";
+  container.innerHTML = "";
 
-    const promotionslist = featuresVideos.map((video) => {
-        let videoArticle = document.createElement("div");
-        videoArticle.classList.add("video");
-        videoArticle.setAttribute("id", video.id);
+  const promotionslist = featuresVideos.map((video) => {
+    let videoArticle = document.createElement("div");
+    videoArticle.classList.add("video");
+    videoArticle.setAttribute("id", video.id);
 
-        videoArticle.innerHTML = `
+    videoArticle.innerHTML = `
       <figure class="video__spot">
        ${video.videolocation}
       </figure>
@@ -145,27 +139,25 @@ function features() {
       </ul>
     `;
 
+    return videoArticle;
+  });
 
-        return videoArticle;
-    });
-
-
-    promotionslist.forEach((video) => {
-        container.append(video)
-    });
+  promotionslist.forEach((video) => {
+    container.append(video);
+  });
 }
 
 // Social Media Marketing
 
 function smarketing() {
-    container.innerHTML = "";
+  container.innerHTML = "";
 
-    const promotionslist = smarketingVideos.map((video) => {
-        let videoArticle = document.createElement("div");
-        videoArticle.classList.add("video");
-        videoArticle.setAttribute("id", video.id);
+  const promotionslist = smarketingVideos.map((video) => {
+    let videoArticle = document.createElement("div");
+    videoArticle.classList.add("video");
+    videoArticle.setAttribute("id", video.id);
 
-        videoArticle.innerHTML = `
+    videoArticle.innerHTML = `
       <figure class="video__spot">
        ${video.videolocation}
       </figure>
@@ -179,27 +171,25 @@ function smarketing() {
       </ul>
     `;
 
+    return videoArticle;
+  });
 
-        return videoArticle;
-    });
-
-
-    promotionslist.forEach((video) => {
-        container.append(video)
-    });
+  promotionslist.forEach((video) => {
+    container.append(video);
+  });
 }
 
 // Social Media Marketing
 
 function cmarketing() {
-    container.innerHTML = "";
+  container.innerHTML = "";
 
-    const promotionslist = cmarketingVideos.map((video) => {
-        let videoArticle = document.createElement("div");
-        videoArticle.classList.add("video");
-        videoArticle.setAttribute("id", video.id);
+  const promotionslist = cmarketingVideos.map((video) => {
+    let videoArticle = document.createElement("div");
+    videoArticle.classList.add("video");
+    videoArticle.setAttribute("id", video.id);
 
-        videoArticle.innerHTML = `
+    videoArticle.innerHTML = `
       <figure class="video__spot">
        ${video.videolocation}
       </figure>
@@ -213,28 +203,25 @@ function cmarketing() {
       </ul>
     `;
 
+    return videoArticle;
+  });
 
-        return videoArticle;
-    });
-
-
-    promotionslist.forEach((video) => {
-        container.append(video)
-    });
+  promotionslist.forEach((video) => {
+    container.append(video);
+  });
 }
-
 
 // MLSE
 
 function mlse() {
-    container.innerHTML = "";
+  container.innerHTML = "";
 
-    const promotionslist = mlseVideos.map((video) => {
-        let videoArticle = document.createElement("div");
-        videoArticle.classList.add("video");
-        videoArticle.setAttribute("id", video.id);
+  const promotionslist = mlseVideos.map((video) => {
+    let videoArticle = document.createElement("div");
+    videoArticle.classList.add("video");
+    videoArticle.setAttribute("id", video.id);
 
-        videoArticle.innerHTML = `
+    videoArticle.innerHTML = `
       <figure class="video__spot">
        ${video.videolocation}
       </figure>
@@ -248,27 +235,25 @@ function mlse() {
       </ul>
     `;
 
+    return videoArticle;
+  });
 
-        return videoArticle;
-    });
-
-
-    promotionslist.forEach((video) => {
-        container.append(video)
-    });
+  promotionslist.forEach((video) => {
+    container.append(video);
+  });
 }
 
 // The Movie Network
 
 function tmn() {
-    container.innerHTML = "";
-   
-    const promotionslist = tmnVideos.map((video) => {
-        let videoArticle = document.createElement("div");
-        videoArticle.classList.add("video");
-        videoArticle.setAttribute("id", video.id);
+  container.innerHTML = "";
 
-        videoArticle.innerHTML = `
+  const promotionslist = tmnVideos.map((video) => {
+    let videoArticle = document.createElement("div");
+    videoArticle.classList.add("video");
+    videoArticle.setAttribute("id", video.id);
+
+    videoArticle.innerHTML = `
       <figure class="video__spot">
        ${video.videolocation}
       </figure>
@@ -281,28 +266,27 @@ function tmn() {
         <li class="detail video__duration">Duration: <span>${video.duration}</span></li>
       </ul>
     `;
-        
 
-        return videoArticle;
-    });
-    // let brand = document.createElement("div");
-    // brand.innerHTML = `<h1>${tmnVideos.brand}</h1>`;
-    // container.insertBefore(brand);
+    return videoArticle;
+  });
+  // let brand = document.createElement("div");
+  // brand.innerHTML = `<h1>${tmnVideos.brand}</h1>`;
+  // container.insertBefore(brand);
 
-    promotionslist.forEach((video) => {
-        container.append(video)
-    });
+  promotionslist.forEach((video) => {
+    container.append(video);
+  });
 }
 // Social Media Marketing
 function marketing() {
-    container.innerHTML = "";
-   
-    const promotionslist = marketingVideos.map((video) => {
-        let videoArticle = document.createElement("div");
-        videoArticle.classList.add("video");
-        videoArticle.setAttribute("id", video.id);
+  container.innerHTML = "";
 
-        videoArticle.innerHTML = `
+  const promotionslist = marketingVideos.map((video) => {
+    let videoArticle = document.createElement("div");
+    videoArticle.classList.add("video");
+    videoArticle.setAttribute("id", video.id);
+
+    videoArticle.innerHTML = `
       <figure class="video__spot">
        ${video.videolocation}
       </figure>
@@ -315,28 +299,27 @@ function marketing() {
         <li class="detail video__duration">Duration: <span>${video.duration}</span></li>
       </ul>
     `;
-        
 
-        return videoArticle;
-    });
-    // let brand = document.createElement("div");
-    // brand.innerHTML = `<h1>${tmnVideos.brand}</h1>`;
-    // container.insertBefore(brand);
+    return videoArticle;
+  });
+  // let brand = document.createElement("div");
+  // brand.innerHTML = `<h1>${tmnVideos.brand}</h1>`;
+  // container.insertBefore(brand);
 
-    promotionslist.forEach((video) => {
-        container.append(video)
-    });
+  promotionslist.forEach((video) => {
+    container.append(video);
+  });
 }
 // CampaignMarketing
 function campaign() {
-    campaignContainer.innerHTML = "";
-   
-    const promotionslist = campaignVideos.map((video) => {
-        let videoArticle = document.createElement("div");
-        videoArticle.classList.add("video");
-        videoArticle.setAttribute("id", video.id);
+  campaignContainer.innerHTML = ``;
 
-        videoArticle.innerHTML = `
+  const promotionslist = campaignVideos.map((video) => {
+    let videoArticle = document.createElement("div");
+    videoArticle.classList.add("video");
+    videoArticle.setAttribute("id", video.id);
+
+    videoArticle.innerHTML = `
       <figure class="video__spot">
        ${video.videolocation}
       </figure>
@@ -349,15 +332,14 @@ function campaign() {
         <li class="detail video__duration">Duration: <span>${video.duration}</span></li>
       </ul>
     `;
-        
 
-        return videoArticle;
-    });
-    // let brand = document.createElement("div");
-    // brand.innerHTML = `<h1>${tmnVideos.brand}</h1>`;
-    // container.insertBefore(brand);
+    return videoArticle;
+  });
+  // let brand = document.createElement("div");
+  // brand.innerHTML = `<h1>${tmnVideos.brand}</h1>`;
+  // container.insertBefore(brand);
 
-    promotionslist.forEach((video) => {
-        campaignContainer.append(video)
-    });
+  promotionslist.forEach((video) => {
+    campaignContainer.append(video);
+  });
 }
