@@ -142,7 +142,12 @@ figure {
 }
 #campaignTitle {
   text-align: center;
+  padding-left: 20px;
+  width: 100%;
   margin-bottom: 2rem;
+  color: white;
+  text-transform: uppercase;
+  font-family: var(--secondary-font);
 }
 
 /* .siteheader:after {
@@ -449,6 +454,11 @@ hr.new1 {
   border: 0.5px solid var(--secondary-color);
   width: 100%;
   transition: 0.3s;
+}
+hr.campaigndivider {
+  border: 0.5px solid var(--primary-color);
+  width: 50%;
+  margin-bottom: 40px;
 }
 @keyframes fadeInUp {
   0% {
