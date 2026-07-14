@@ -28,6 +28,6 @@ const blueskyLink = {
   alt: "BlueSky Logo",
   link: "https://bsky.app/profile/sanparty.bsky.social",
 };
-const socialLinks = [githubLink, linkedinLink, vimeoLink, blueskyLink];
+const socialLinks = [githubLink, linkedinLink, vimeoLink];
 
 export default socialLinks;
