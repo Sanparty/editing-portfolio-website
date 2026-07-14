@@ -41,6 +41,9 @@ let marketingVideos = videoObjectArray.filter(function (item) {
 let campaignVideos = videoObjectArray.filter(function (item) {
   return item.genre == "Social Media Campaign";
 });
+let personalVideos = videoObjectArray.filter(function (item) {
+  return item.genre == "Personal";
+});
 
 console.log(tmnVideos);
 
@@ -75,6 +78,10 @@ window.marketingShow = function marketingShow() {
 };
 window.campaignShow = function campaignShow() {
   campaign();
+};
+
+window.personalShow = function personalShow() {
+  personal();
 };
 // let promotionsButton = document.getElementById('promotionsBtn');
 // let featuresButton = document.getElementById('featuresBtn');
@@ -341,5 +348,38 @@ function campaign() {
 
   promotionslist.forEach((video) => {
     campaignContainer.append(video);
+  });
+}
+
+// Personal
+function personal() {
+  container.innerHTML = "";
+
+  const promotionslist = personalVideos.map((video) => {
+    let videoArticle = document.createElement("div");
+    videoArticle.classList.add("video");
+    videoArticle.setAttribute("id", video.id);
+
+    videoArticle.innerHTML = `
+      <figure class="video__spot">
+       ${video.videolocation}
+      </figure>
+      <h1 class="video__name">${video.promoName}</h1>
+      <ul class="video__details">
+       
+        <li class="detail video__role">Role: <span>${video.role}</span></li>
+        <li class="detail video__genre">Genre: <span>${video.genre}</span></li>
+        <li class="detail video__duration">Duration: <span>${video.duration}</span></li>
+      </ul>
+    `;
+
+    return videoArticle;
+  });
+  // let brand = document.createElement("div");
+  // brand.innerHTML = `<h1>${tmnVideos.brand}</h1>`;
+  // container.insertBefore(brand);
+
+  promotionslist.forEach((video) => {
+    container.append(video);
   });
 }

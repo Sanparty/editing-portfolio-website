@@ -19,7 +19,7 @@ const terminator = new Video(
   "January 1, 2004",
   "images/THE TERMINATOR STARZ PROMO-low.mp4",
   "mp4",
-  "promotions.html"
+  "promotions.html",
 );
 
 const mlse1 = new Video(
@@ -40,7 +40,7 @@ const mlse1 = new Video(
   "January 1, 2004",
   "images/Purolator_Undercover_Employee_With_Jonas_Valanciunas.mp4",
   "mp4",
-  "marketing.html"
+  "marketing.html",
 );
 
 const gb1 = new Video(
@@ -61,7 +61,7 @@ const gb1 = new Video(
   "January 1, 2004",
   "images/George Brown College CCET - Marketing Video-low.mp4",
   "mp4",
-  "marketing.html"
+  "marketing.html",
 );
 
 const gb2 = new Video(
@@ -82,7 +82,7 @@ const gb2 = new Video(
   "January 1, 2004",
   "images/George Brown College School Of Dental Health - Marketing Video-low.mp4",
   "mp4",
-  "marketing.html"
+  "marketing.html",
 );
 
 const encore1 = new Video(
@@ -103,7 +103,7 @@ const encore1 = new Video(
   "January 1, 2004",
   "none",
   "none",
-  "promotions.html"
+  "promotions.html",
 );
 
 const encore2 = new Video(
@@ -124,7 +124,7 @@ const encore2 = new Video(
   "January 1, 2004",
   "images/TMN Encore Image_July 2017-low.mp4",
   "mp4",
-  "promotions.html"
+  "promotions.html",
 );
 
 const tmn1 = new Video(
@@ -145,7 +145,7 @@ const tmn1 = new Video(
   "January 1, 2004",
   "images/The List - Feature-low.mp4",
   "mp4",
-  "features.html"
+  "features.html",
 );
 
 const mlse2 = new Video(
@@ -165,7 +165,7 @@ const mlse2 = new Video(
   `<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/J8OnanW2yVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>`,
   "January 1, 2004",
   "none",
-  "none"
+  "none",
 );
 const mlse3 = new Video(
   "video09",
@@ -184,7 +184,7 @@ const mlse3 = new Video(
   `<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/cC2TbcGW0RM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`,
   "October 17, 2014",
   "none",
-  "none"
+  "none",
 );
 const mlse4 = new Video(
   "video09",
@@ -204,7 +204,7 @@ const mlse4 = new Video(
   "January 1, 2004",
   "none",
   "none",
-  "marketing.html"
+  "marketing.html",
 );
 const mlse5 = new Video(
   "video09",
@@ -224,7 +224,7 @@ const mlse5 = new Video(
   "April 24, 2015",
   "images/Ford_Game_Day_Road_Trip_Chicago.mp4",
   "mp4",
-  "marketing.html"
+  "marketing.html",
 );
 const xenophile1 = new Video(
   "video10",
@@ -244,7 +244,7 @@ const xenophile1 = new Video(
   "January 1, 2004",
   "none",
   "none",
-  "features.html"
+  "features.html",
 );
 
 const mpix1 = new Video(
@@ -265,7 +265,7 @@ const mpix1 = new Video(
   "January 1, 2004",
   "images/The Jerk - Promo-low.mp4",
   "mp4",
-  "promotions.html"
+  "promotions.html",
 );
 
 const movieent1 = new Video(
@@ -286,7 +286,7 @@ const movieent1 = new Video(
   "September 1, 2013",
   "images/Toronto International Film Festival Wrap Up - Feature-low.mp4",
   "mp4",
-  "features.html"
+  "features.html",
 );
 
 const movieent2 = new Video(
@@ -307,7 +307,7 @@ const movieent2 = new Video(
   "September 1, 2013",
   "none",
   "none",
-  "features.html"
+  "features.html",
 );
 
 const tsn1 = new Video(
@@ -328,7 +328,7 @@ const tsn1 = new Video(
   "January 1, 2004",
   "none",
   "none",
-  "features.html"
+  "features.html",
 );
 
 const mpix2 = new Video(
@@ -349,7 +349,7 @@ const mpix2 = new Video(
   "January 1, 2004",
   "none",
   "none",
-  "promotions.html"
+  "promotions.html",
 );
 
 const encore3 = new Video(
@@ -370,7 +370,7 @@ const encore3 = new Video(
   "January 1, 2004",
   "none",
   "none",
-  "promotions.html"
+  "promotions.html",
 );
 const encore4 = new Video(
   "video17",
@@ -390,7 +390,7 @@ const encore4 = new Video(
   "January 1, 2004",
   "none",
   "none",
-  "promotions.html"
+  "promotions.html",
 );
 const hbo1 = new Video(
   "video18",
@@ -410,7 +410,7 @@ const hbo1 = new Video(
   "September 1, 2013",
   "none",
   "none",
-  "features.html"
+  "features.html",
 );
 
 const encore5 = new Video(
@@ -431,7 +431,7 @@ const encore5 = new Video(
   "January 1, 2004",
   "none",
   "none",
-  "promotions.html"
+  "promotions.html",
 );
 const encore6 = new Video(
   "video20",
@@ -451,7 +451,7 @@ const encore6 = new Video(
   "January 1, 2019",
   "none",
   "none",
-  "promotions.html"
+  "promotions.html",
 );
 const mescape1 = new Video(
   "video21",
@@ -471,7 +471,7 @@ const mescape1 = new Video(
   "January 1, 2004",
   "none",
   "none",
-  "promotions.html"
+  "promotions.html",
 );
 const xenophile2 = new Video(
   "video22",
@@ -491,7 +491,7 @@ const xenophile2 = new Video(
   "January 1, 2009",
   "none",
   "none",
-  "features.html"
+  "features.html",
 );
 const mlse6 = new Video(
   "video23",
@@ -511,7 +511,7 @@ const mlse6 = new Video(
   "July 2, 2015",
   "none",
   "none",
-  "marketing.html"
+  "marketing.html",
 );
 const spidermanStarz = new Video(
   "video24",
@@ -532,7 +532,7 @@ const spidermanStarz = new Video(
   "May 5, 2023",
   "none",
   "none",
-  "promotions.html"
+  "promotions.html",
 );
 const bellLightsOn1 = new Video(
   "video25",
@@ -553,7 +553,7 @@ const bellLightsOn1 = new Video(
   "August 22, 2023",
   "none",
   "none",
-  "socialmedia.html"
+  "socialmedia.html",
 );
 const bellLightsOn2 = new Video(
   "video26",
@@ -573,7 +573,7 @@ const bellLightsOn2 = new Video(
   "August 22, 2023",
   "none",
   "none",
-  "socialmedia.html"
+  "socialmedia.html",
 );
 const bpmtv1 = new Video(
   "video27",
@@ -593,7 +593,7 @@ const bpmtv1 = new Video(
   "March 1, 2024",
   "none",
   "none",
-  "promotions.html"
+  "promotions.html",
 );
 const bpmtv2 = new Video(
   "video28",
@@ -613,7 +613,7 @@ const bpmtv2 = new Video(
   "March 4, 2024",
   "none",
   "none",
-  "promotions.html"
+  "promotions.html",
 );
 const tmn2 = new Video(
   "video29",
@@ -633,7 +633,27 @@ const tmn2 = new Video(
   "January 1, 2004",
   "none",
   "none",
-  "features.html"
+  "features.html",
+);
+const personal1 = new Video(
+  "video30",
+  "Ichiro Hall of Fame Induction",
+  null,
+  null,
+  "Personal",
+  "Personal Project",
+  true,
+  true,
+  true,
+  true,
+  true,
+  "2:44",
+  "Vimeo",
+  `<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1209915909?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Ichiro Hall of Fame Indiction"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,
+  "July 14, 2026",
+  "none",
+  "none",
+  "personal.html",
 );
 
 const videoObjectArray = [
@@ -668,6 +688,7 @@ const videoObjectArray = [
   bellLightsOn1,
   bpmtv1,
   bpmtv2,
+  personal1,
 ];
 
 // Export the array to be used in other files
