@@ -655,7 +655,26 @@ const personal1 = new Video(
   "none",
   "personal.html",
 );
-
+const personal2 = new Video(
+  "video31",
+  "Messi Visits Toronto",
+  null,
+  null,
+  "Personal",
+  "Personal Project",
+  true,
+  true,
+  true,
+  true,
+  true,
+  "2:30",
+  "Vimeo",
+  `<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1214147469?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Messi Visits Toronto"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,
+  "July 29, 2026",
+  "none",
+  "none",
+  "personal.html",
+);
 const videoObjectArray = [
   spidermanStarz,
   tmn1,
@@ -689,6 +708,7 @@ const videoObjectArray = [
   bpmtv1,
   bpmtv2,
   personal1,
+  personal2,
 ];
 
 // Export the array to be used in other files
