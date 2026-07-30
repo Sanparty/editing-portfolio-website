@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DSP Video Editing Portfolio</title>
+    <title>DSP Personal spots</title>
     <link
       rel="stylesheet"
       type="text/css"
@@ -24,11 +24,11 @@
       media="all"
     />
     <!-- <link
-    rel="stylesheet"
-    href="./css/style-dspedit.production.css"
-    type="text/css"
-    media="all"
-    /> -->
+  rel="stylesheet"
+  href="./css/style-dspedit.production.css"
+  type="text/css"
+  media="all"
+  /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -48,6 +48,18 @@
     <script type="module" src="./js/components/data.js"></script>
     <script type="module" src="./js/main.js"></script>
     <script type="module" src="./js/allspots.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: "EVwDPvs94HElj1O62",
+        });
+      })();
+    </script>
   </head>
 
   <body>
@@ -68,6 +80,7 @@
     </div>
 
     <!-- Use any element to open/show the overlay navigation menu -->
+
     <!-- The email overlay -->
     <div id="myEmail" class="email_overlay fadeInUp-animation">
       <!-- Overlay content -->
@@ -80,28 +93,24 @@
           >&times;</a
         >
         <!-- <h2 id="contact-me">Contact Me</h2> -->
-        <form
-          method="post"
-          action="contact-form-process.php"
-          class="contact-form"
-        >
+        <form id="contact-form" class="contact-form">
           <fieldset id="fieldset-contact">
             <legend>Contact Information</legend>
-            <label class="standard-label" for="contact-name" value="name"
+            <label class="standard-label" for="lastName" value="name"
               >Name:</label
             >
             <input
               type="text"
               id="contact-name"
-              name="contact-name"
+              name="lastName"
               minlength="5"
               required
             />
-            <label class="standard-label" for="contact-email">E-mail:</label>
+            <label class="standard-label" for="emailAddress">E-mail:</label>
             <input
               type="email"
               id="contact-email"
-              name="contact-email"
+              name="emailAddress"
               required
             />
           </fieldset>
@@ -112,7 +121,7 @@
             <textarea
               maxlength="240"
               id="contact-message"
-              name="contact-message"
+              name="comment"
               required
               rows="5"
               cols="30"
@@ -125,6 +134,12 @@
             value="Send Message"
           />
         </form>
+        <div id="result_good" class="nodisplay">
+          Your message has been received. Thanks for contacting me.
+        </div>
+        <div id="result_bad" class="nodisplay">
+          Sorry, your message did not send correctly. Please try again later.'
+        </div>
       </div>
     </div>
 
@@ -145,9 +160,6 @@
             </div>
             <div class="menubar-list menuitem">
               <a href="marketing.html">MARKETING</a>
-            </div>
-            <div class="menubar-list menuitem">
-              <a href="allspots.html">ALL</a>
             </div>
             <div class="menubar-list menuitem email_link">
               <span
@@ -182,50 +194,20 @@
           </div>
         </div>
         <!-- <div class="social-media">
-          <a href="https://github.com/Sanparty" target="_blank" class="social-media_logo"><img src="images/1298743_github_git_logo_social_icon.svg" alt="Github" ></a>
-          <a href="https://twitter.com/Sanparty" target="_blank" class="social-media_logo"><img src="images/294709_circle_twitter_icon.svg" alt="Twitter" ></a>
-          <a href="https://www.linkedin.com/in/dsanpedro/" target="_blank" class="social-media_logo"><img src="images/317750_linkedin_icon.svg" alt="Linkedin" ></a>
-          <a href="https://vimeo.com/dansp" target="_blank" class="social-media_logo"><img src="images/381370_logo_vimeo_icon.svg" alt="Vimeo" ></a>
-      </div> -->
+        <a href="https://github.com/Sanparty" target="_blank" class="social-media_logo"><img src="images/1298743_github_git_logo_social_icon.svg" alt="Github" ></a>
+        <a href="https://twitter.com/Sanparty" target="_blank" class="social-media_logo"><img src="images/294709_circle_twitter_icon.svg" alt="Twitter" ></a>
+        <a href="https://www.linkedin.com/in/dsanpedro/" target="_blank" class="social-media_logo"><img src="images/317750_linkedin_icon.svg" alt="Linkedin" ></a>
+        <a href="https://vimeo.com/dansp" target="_blank" class="social-media_logo"><img src="images/381370_logo_vimeo_icon.svg" alt="Vimeo" ></a>
+    </div> -->
       </div>
-
       <header class="siteheader fadeInUp-animation">
         <div class="site-title">DSP Portfolio</div>
-        <div class="site-description">Check out videos I have worked on:</div>
-      </header>
-      <!-- <main class="maincontent">
-      <div class="page-header">
-        <h2 class="page-header__heading">A pack for every purpose</h2>
-        <p>
-          If you're carrying a heavy load, you can't find a better tool than a
-          backpack. Distributing the weight evenly across your shoulders, back,
-          and hips, the backpack lets you use the natural frame of your body to
-          literally <em>shoulder</em> the weight while your legs do the
-          carrying.
-        </p>
-      </div>
-    </main> -->
-      <div class="full-container fadeInUp-animation">
-        <div class="buttons">
-          <button id="promotionsbtn" onclick="promotionsShow()">
-            Promotions
-          </button>
-          <button id="featuresbtn" onclick="featuresShow()">Features</button>
-          <button id="smarketingbtn" onclick="smarketingShow()">
-            Social Media Marketing
-          </button>
-          <button id="cmarketingbtn" onclick="cmarketingShow()">
-            Corporate Marketing
-          </button>
-          <button id="mlsebtn" onclick="mlseShow()">
-            Maple Leaf Sports & Entertainment
-          </button>
-          <button id="tmnbtn" onclick="tmnShow()">The Movie Network</button>
-          <button id="personalbtn" onclick="personalShow()">Personal</button>
-          <!-- <button id="campaignbtn" onclick="campaignShow()">
-            Social Media Campaign
-          </button> -->
+        <div class="site-description">
+          Check out Personal spots I've worked on:
         </div>
+      </header>
+
+      <div class="full-container fadeInUp-animation">
         <div id="container"></div>
       </div>
       <div class="push"></div>
@@ -236,19 +218,36 @@
         <script>
           document.write(new Date().getFullYear());
         </script>
-        , Dan San Pedro. All Rights Reserved
+        Dan San Pedro. All Rights Reserved
       </div>
       <div class="social-media"></div>
     </footer>
-
     <button onclick="topFunction()" id="myBtn" title="Go to top">
       <i class="fa fa-angle-double-up"></i>
     </button>
     <script src="js/script2.js"></script>
-    <!-- <script>
-    window.onload = function() {
-    featuresShow();
-  };
-  </script> -->
+    <script>
+      window.onload = function () {
+        personalShow();
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            // these IDs from the previous steps
+            emailjs.sendForm("jman_web", "template_e28bu7j", this).then(
+              () => {
+                console.log("SUCCESS!");
+                var element = document.getElementById("result_good");
+                element.classList.remove("nodisplay");
+              },
+              (error) => {
+                console.log("FAILED...", error);
+                var element = document.getElementById("result_bad");
+                element.classList.remove("nodisplay");
+              },
+            );
+          });
+      };
+    </script>
   </body>
 </html>
