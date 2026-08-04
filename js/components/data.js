@@ -675,6 +675,69 @@ const personal2 = new Video(
   "none",
   "personal.html",
 );
+const bellLightsOn3 = new Video(
+  "video32",
+  "Bell Campaign 9x16 Edit",
+  "Bell",
+  "Bell Media",
+  "Social Media Campaign",
+  "Offline Editor/Reformat video for social media",
+  true,
+  false,
+  false,
+  false,
+  false,
+  ":15",
+  "Vimeo",
+  `<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/856908769?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Bell Campaign - 9x16 example"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            `,
+  "August 3, 2026",
+  "none",
+  "none",
+  "socialmedia.html",
+);
+const bellLightsOn4 = new Video(
+  "video33",
+  "Bell Campaign 9x16 Edit",
+  "Bell",
+  "Bell Media",
+  "Social Media Campaign",
+  "Offline Editor/Reformat video for social media",
+  true,
+  false,
+  false,
+  false,
+  false,
+  ":15",
+  "Vimeo",
+  `<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/856908740?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Bell Campaign - 9x16 example"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            `,
+  "August 3, 2026",
+  "none",
+  "none",
+  "socialmedia.html",
+);
+const bellLightsOn5 = new Video(
+  "video34",
+  "Bell Campaign 16x9 Edit",
+  "Bell",
+  "Bell Media",
+  "Social Media Campaign",
+  "Offline Editor",
+  true,
+  false,
+  false,
+  false,
+  false,
+  ":25",
+  "Vimeo",
+  `<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/856908816?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Bell Campaign - 16x9 example"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,
+  "August 3, 2026",
+  "none",
+  "none",
+  "socialmedia.html",
+);
+
 const videoObjectArray = [
   spidermanStarz,
   tmn1,
@@ -709,6 +772,9 @@ const videoObjectArray = [
   bpmtv2,
   personal1,
   personal2,
+  bellLightsOn4,
+  bellLightsOn5,
+  bellLightsOn3,
 ];
 
 // Export the array to be used in other files
