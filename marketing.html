@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -209,10 +209,14 @@
       </header>
 
       <div class="full-container fadeInUp-animation">
-        <div id="container"></div>
-        <hr class="campaigndivider" />
         <div id="campaignTitle">Social Media Campaign:</div>
         <div id="campaignContainer"></div>
+        <hr class="campaigndivider" />
+        <div id="campaignTitle">Social Media Marketing:</div>
+        <div id="container"></div>
+        <hr class="campaigndivider" />
+        <div id="campaignTitle">Corporate Marketing:</div>
+        <div id="corporateContainer"></div>
       </div>
       <div class="push"></div>
     </div>
@@ -234,6 +238,7 @@
       window.onload = function () {
         marketingShow();
         campaignShow();
+        corporateShow();
         document
           .getElementById("contact-form")
           .addEventListener("submit", function (event) {
@@ -249,7 +254,7 @@
                 console.log("FAILED...", error);
                 var element = document.getElementById("result_bad");
                 element.classList.remove("nodisplay");
-              }
+              },
             );
           });
       };
