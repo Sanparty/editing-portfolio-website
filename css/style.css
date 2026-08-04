@@ -373,6 +373,7 @@ figure {
 
 .videosection,
 .container,
+#corporateContainer,
 #campaignContainer,
 #container,
 .marketing,
@@ -456,7 +457,7 @@ hr.new1 {
   transition: 0.3s;
 }
 hr.campaigndivider {
-  border: 0.5px solid var(--primary-color);
+  border: 1px dotted var(--primary-color);
   width: 50%;
   margin-bottom: 40px;
 }
