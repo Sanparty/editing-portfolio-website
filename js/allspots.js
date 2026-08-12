@@ -37,7 +37,9 @@ let marketingVideos = videoObjectArray.filter(function (item) {
 let corporateVideos = videoObjectArray.filter(function (item) {
   return item.genre == "Corporate Marketing";
 });
-
+let brandPartnershipVideos = videoObjectArray.filter(function (item) {
+  return item.genre == "Brand Partnership Marketing";
+});
 let campaignVideos = videoObjectArray.filter(function (item) {
   return item.genre == "Social Media Campaign";
 });
@@ -82,6 +84,9 @@ window.campaignShow = function campaignShow() {
 window.corporateShow = function corporateShow() {
   corporate();
 };
+window.brandPartnershipShow = function brandPartnershipShow() {
+  brandPartnership();
+};
 window.personalShow = function personalShow() {
   personal();
 };
@@ -93,6 +98,10 @@ window.personalShow = function personalShow() {
 let container = document.getElementById("container");
 let campaignContainer = document.getElementById("campaignContainer");
 let corporateContainer = document.getElementById("corporateContainer");
+let brandPartnershipContainer = document.getElementById(
+  "brandPartnershipContainer",
+);
+
 console.log("Container text: " + container.innerHTML);
 
 function promotions() {
@@ -384,6 +393,38 @@ function corporate() {
 
   promotionslist.forEach((video) => {
     corporateContainer.append(video);
+  });
+}
+function brandPartnership() {
+  brandPartnershipContainer.innerHTML = ``;
+
+  const promotionslist = brandPartnershipVideos.map((video) => {
+    let videoArticle = document.createElement("div");
+    videoArticle.classList.add("video");
+    videoArticle.setAttribute("id", video.id);
+
+    videoArticle.innerHTML = `
+      <figure class="video__spot">
+       ${video.videolocation}
+      </figure>
+      <h1 class="video__name">${video.promoName}</h1>
+      <ul class="video__details">
+        <li class="detail video__brand">Brand: <span>${video.brand}</span></li>
+        <li class="detail video__client">Client: <span>${video.client}</span></li>
+        <li class="detail video__role">Role: <span>${video.role}</span></li>
+        <li class="detail video__genre">Genre: <span>${video.genre}</span></li>
+        <li class="detail video__duration">Duration: <span>${video.duration}</span></li>
+      </ul>
+    `;
+
+    return videoArticle;
+  });
+  // let brand = document.createElement("div");
+  // brand.innerHTML = `<h1>${tmnVideos.brand}</h1>`;
+  // container.insertBefore(brand);
+
+  promotionslist.forEach((video) => {
+    brandPartnershipContainer.append(video);
   });
 }
 
