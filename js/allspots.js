@@ -46,6 +46,9 @@ let campaignVideos = videoObjectArray.filter(function (item) {
 let personalVideos = videoObjectArray.filter(function (item) {
   return item.genre == "Personal";
 });
+let motionDesignVideos = videoObjectArray.filter(function (item) {
+  return item.genre == "Motion Design";
+});
 
 console.log(tmnVideos);
 
@@ -89,6 +92,9 @@ window.brandPartnershipShow = function brandPartnershipShow() {
 };
 window.personalShow = function personalShow() {
   personal();
+};
+window.motionDesignShow = function motionDesignShow() {
+  motionDesign();
 };
 // let promotionsButton = document.getElementById('promotionsBtn');
 // let featuresButton = document.getElementById('featuresBtn');
@@ -446,6 +452,38 @@ function personal() {
        
         <li class="detail video__role">Role: <span>${video.role}</span></li>
         <li class="detail video__genre">Genre: <span>${video.genre}</span></li>
+        <li class="detail video__duration">Duration: <span>${video.duration}</span></li>
+      </ul>
+    `;
+
+    return videoArticle;
+  });
+  // let brand = document.createElement("div");
+  // brand.innerHTML = `<h1>${tmnVideos.brand}</h1>`;
+  // container.insertBefore(brand);
+
+  promotionslist.forEach((video) => {
+    container.append(video);
+  });
+}
+// Motion Design
+function motionDesign() {
+  container.innerHTML = "";
+
+  const promotionslist = motionDesignVideos.map((video) => {
+    let videoArticle = document.createElement("div");
+    videoArticle.classList.add("video");
+    videoArticle.setAttribute("id", video.id);
+
+    videoArticle.innerHTML = `
+      <figure class="video__spot">
+       ${video.videolocation}
+      </figure>
+      <h1 class="video__name">${video.promoName}</h1>
+      <ul class="video__details">
+        <li class="detail video__brand">Brand: <span>${video.brand}</span></li>
+        <li class="detail video__client">Client: <span>${video.client}</span></li>
+        <li class="detail video__role">Role: <span>${video.role}</span></li>
         <li class="detail video__duration">Duration: <span>${video.duration}</span></li>
       </ul>
     `;
